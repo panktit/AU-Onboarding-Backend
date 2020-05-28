@@ -34,5 +34,15 @@ public class UserService {
 	public User getUser(Long id) {
 		return userRepository.findById(id).get();
 	}
+	
+//	temp-implementation, need to modify the verification method
+	public String verifyUser(String email, String password) {
+		User user = userRepository.findFirstByEmail(email);
+		if(user!=null && user.getPassword().equals(password))
+			return "\"Login Successful! :D\"";
+		else
+			return "\"Login Unsuccessful! :(\"";
+				
+	}
 
 }
