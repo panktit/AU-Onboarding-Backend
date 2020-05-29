@@ -33,6 +33,11 @@ public class UserController {
 		return userService.getUser(id);
 	}
 	
+	@PostMapping("/new")
+	public String newAPI(@RequestBody ObjectNode obj) {
+		return obj.get("text").asText();
+	}
+	
 	@PostMapping("/users")
 	public User saveUser(@RequestBody User newUser) {
 		return userService.saveUser(newUser);
@@ -43,5 +48,10 @@ public class UserController {
 		String email = objectNode.get("email").asText();
 		String password = objectNode.get("password").asText();
 		return userService.verifyUser(email, password);
+	}
+	
+	@GetMapping("/glogin")
+	public String googleLogin() {
+		return "\"Wassup\"";
 	}
 }
