@@ -4,7 +4,6 @@ spring:
     platform: mysql
     url: jdbc:mysql://localhost:3306/au
     username: root
-    driver-class-name: com.mysql.jdbc.Driver
   jpa:
     generate-ddl: true
   security:
