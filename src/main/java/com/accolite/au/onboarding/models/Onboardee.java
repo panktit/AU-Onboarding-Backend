@@ -16,31 +16,32 @@ public class Onboardee {
 	private Long id;
 	private String name;
 	private String email;
-	private Date dob;
+	private String joiningCity;
+//	private Date dob;
 	private String mno;
 	private String obStatus;
-	private Date joiningDate;
-	private Date obDate;
+//	private Date joiningDate;
+//	private Date obDate;
 	private int eta;
-	private boolean bgcComplete;
-	private boolean graduationComplete;
-	private boolean obFormalitiesComplete;
+	private String bgcComplete;
+	private String graduationComplete;
+	private String obFormalitiesComplete;
 	private String created_at;
 	private String last_modified;
 //	List<Skill> skills;
 	
 	public Onboardee() {}
 
-	public Onboardee(String name, String email, Date dob, String mno, String obStatus, Date joiningDate, Date obDate,
-			int eta, boolean bgcComplete, boolean graduationComplete, boolean obFormalitiesComplete, String created_at,
+	public Onboardee(String name, String email, Date dob, String mno, String joiningCity, String obStatus, Date joiningDate, Date obDate,
+			int eta, String bgcComplete, String graduationComplete, String obFormalitiesComplete, String created_at,
 			String last_modified) {
 		this.name = name;
 		this.email = email;
-		this.dob = dob;
+	
 		this.mno = mno;
+		this.joiningCity = joiningCity;
 		this.obStatus = obStatus;
-		this.joiningDate = joiningDate;
-		this.obDate = obDate;
+		
 		this.eta = eta;
 		this.bgcComplete = bgcComplete;
 		this.graduationComplete = graduationComplete;
@@ -74,13 +75,13 @@ public class Onboardee {
 		this.email = email;
 	}
 
-	public Date getDob() {
-		return dob;
-	}
-
-	public void setDob(Date dob) {
-		this.dob = dob;
-	}
+//	public Date getDob() {
+//		return dob;
+//	}
+//
+//	public void setDob(Date dob) {	
+//		this.dob = dob;
+//	}
 
 	public String getMno() {
 		return mno;
@@ -90,6 +91,15 @@ public class Onboardee {
 		this.mno = mno;
 	}
 
+	
+	public String getJoiningCity() {
+		return joiningCity;
+	}
+
+	public void setJoiningCity(String joiningCity) {
+		this.joiningCity = joiningCity;
+	}
+
 	public String getObStatus() {
 		return obStatus;
 	}
@@ -97,22 +107,22 @@ public class Onboardee {
 	public void setObStatus(String obStatus) {
 		this.obStatus = obStatus;
 	}
+//
+//	public Date getJoiningDate() {
+//		return joiningDate;
+//	}
+//
+//	public void setJoiningDate(Date joiningDate) {
+//		this.joiningDate = joiningDate;
+//	}
 
-	public Date getJoiningDate() {
-		return joiningDate;
-	}
-
-	public void setJoiningDate(Date joiningDate) {
-		this.joiningDate = joiningDate;
-	}
-
-	public Date getObDate() {
-		return obDate;
-	}
-
-	public void setObDate(Date obDate) {
-		this.obDate = obDate;
-	}
+//	public Date getObDate() {
+//		return obDate;
+//	}
+//
+//	public void setObDate(Date obDate) {
+//		this.obDate = obDate;
+//	}
 
 	public int getEta() {
 		return eta;
@@ -122,27 +132,27 @@ public class Onboardee {
 		this.eta = eta;
 	}
 
-	public boolean isBgcComplete() {
+	public String isBgcComplete() {
 		return bgcComplete;
 	}
 
-	public void setBgcComplete(boolean bgcComplete) {
+	public void setBgcComplete(String bgcComplete) {
 		this.bgcComplete = bgcComplete;
 	}
 
-	public boolean isGraduationComplete() {
+	public String isGraduationComplete() {
 		return graduationComplete;
 	}
 
-	public void setGraduationComplete(boolean graduationComplete) {
+	public void setGraduationComplete(String graduationComplete) {
 		this.graduationComplete = graduationComplete;
 	}
 
-	public boolean isObFormalitiesComplete() {
+	public String isObFormalitiesComplete() {
 		return obFormalitiesComplete;
 	}
 
-	public void setObFormalitiesComplete(boolean obFormalitiesComplete) {
+	public void setObFormalitiesComplete(String obFormalitiesComplete) {
 		this.obFormalitiesComplete = obFormalitiesComplete;
 	}
 
@@ -193,5 +203,13 @@ public class Onboardee {
 		} else if (!id.equals(other.id))
 			return false;
 		return true;
+	}
+
+	@Override
+	public String toString() {
+		return "Onboardee [id=" + id + ", name=" + name + ", email=" + email + ", joiningCity=" + joiningCity + ", mno="
+				+ mno + ", obStatus=" + obStatus + ", eta=" + eta + ", bgcComplete=" + bgcComplete
+				+ ", graduationComplete=" + graduationComplete + ", obFormalitiesComplete=" + obFormalitiesComplete
+				+ ", created_at=" + created_at + ", last_modified=" + last_modified + "]";
 	}
 }

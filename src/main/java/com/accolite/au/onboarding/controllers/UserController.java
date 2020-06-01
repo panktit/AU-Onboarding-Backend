@@ -32,11 +32,7 @@ public class UserController {
 	public User getUser(@PathVariable Long id) {
 		return userService.getUser(id);
 	}
-	
-	@PostMapping("/new")
-	public String newAPI(@RequestBody ObjectNode obj) {
-		return obj.get("text").asText();
-	}
+
 	
 	@PostMapping("/users")
 	public User saveUser(@RequestBody User newUser) {
