@@ -1,6 +1,5 @@
 package com.accolite.au.onboarding.models;
 
-import java.util.Date;
 import java.util.List;
 
 import javax.persistence.Entity;
@@ -10,45 +9,47 @@ import javax.persistence.Id;
 
 @Entity
 public class Onboardee {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 	private String name;
 	private String email;
 	private String joiningCity;
-//	private Date dob;
+	private String dob;
 	private String mno;
 	private String obStatus;
-//	private Date joiningDate;
-//	private Date obDate;
+	private String joiningDate;
+	private String obDate;
 	private int eta;
-	private String bgcComplete;
-	private String graduationComplete;
-	private String obFormalitiesComplete;
+	private String bgc;
+	private String graduation;
+	private String obFormalities;
 	private String created_at;
 	private String last_modified;
 //	List<Skill> skills;
-	
-	public Onboardee() {}
 
-	public Onboardee(String name, String email, Date dob, String mno, String joiningCity, String obStatus, Date joiningDate, Date obDate,
-			int eta, String bgcComplete, String graduationComplete, String obFormalitiesComplete, String created_at,
-			String last_modified) {
+	public Onboardee() {
+	}
+
+	public Onboardee(Long id, String name, String email, String joiningCity, String dob, String mno, String obStatus,
+			String joiningDate, String obDate, int eta, String bgc, String graduation, String obFormalities,
+			String created_at, String last_modified) {
+		this.id = id;
 		this.name = name;
 		this.email = email;
-	
-		this.mno = mno;
 		this.joiningCity = joiningCity;
+		this.dob = dob;
+		this.mno = mno;
 		this.obStatus = obStatus;
-		
+		this.joiningDate = joiningDate;
+		this.obDate = obDate;
 		this.eta = eta;
-		this.bgcComplete = bgcComplete;
-		this.graduationComplete = graduationComplete;
-		this.obFormalitiesComplete = obFormalitiesComplete;
+		this.bgc = bgc;
+		this.graduation = graduation;
+		this.obFormalities = obFormalities;
 		this.created_at = created_at;
 		this.last_modified = last_modified;
-//		this.skills = skills;
 	}
 
 	public Long getId() {
@@ -75,13 +76,21 @@ public class Onboardee {
 		this.email = email;
 	}
 
-//	public Date getDob() {
-//		return dob;
-//	}
-//
-//	public void setDob(Date dob) {	
-//		this.dob = dob;
-//	}
+	public String getJoiningCity() {
+		return joiningCity;
+	}
+
+	public void setJoiningCity(String joiningCity) {
+		this.joiningCity = joiningCity;
+	}
+
+	public String getDob() {
+		return dob;
+	}
+
+	public void setDob(String dob) {
+		this.dob = dob;
+	}
 
 	public String getMno() {
 		return mno;
@@ -91,15 +100,6 @@ public class Onboardee {
 		this.mno = mno;
 	}
 
-	
-	public String getJoiningCity() {
-		return joiningCity;
-	}
-
-	public void setJoiningCity(String joiningCity) {
-		this.joiningCity = joiningCity;
-	}
-
 	public String getObStatus() {
 		return obStatus;
 	}
@@ -107,22 +107,22 @@ public class Onboardee {
 	public void setObStatus(String obStatus) {
 		this.obStatus = obStatus;
 	}
-//
-//	public Date getJoiningDate() {
-//		return joiningDate;
-//	}
-//
-//	public void setJoiningDate(Date joiningDate) {
-//		this.joiningDate = joiningDate;
-//	}
 
-//	public Date getObDate() {
-//		return obDate;
-//	}
-//
-//	public void setObDate(Date obDate) {
-//		this.obDate = obDate;
-//	}
+	public String getJoiningDate() {
+		return joiningDate;
+	}
+
+	public void setJoiningDate(String joiningDate) {
+		this.joiningDate = joiningDate;
+	}
+
+	public String getObDate() {
+		return obDate;
+	}
+
+	public void setObDate(String obDate) {
+		this.obDate = obDate;
+	}
 
 	public int getEta() {
 		return eta;
@@ -132,28 +132,28 @@ public class Onboardee {
 		this.eta = eta;
 	}
 
-	public String isBgcComplete() {
-		return bgcComplete;
+	public String getBgc() {
+		return bgc;
 	}
 
-	public void setBgcComplete(String bgcComplete) {
-		this.bgcComplete = bgcComplete;
+	public void setBgc(String bgc) {
+		this.bgc = bgc;
 	}
 
-	public String isGraduationComplete() {
-		return graduationComplete;
+	public String getGraduation() {
+		return graduation;
 	}
 
-	public void setGraduationComplete(String graduationComplete) {
-		this.graduationComplete = graduationComplete;
+	public void setGraduation(String graduation) {
+		this.graduation = graduation;
 	}
 
-	public String isObFormalitiesComplete() {
-		return obFormalitiesComplete;
+	public String getObFormalities() {
+		return obFormalities;
 	}
 
-	public void setObFormalitiesComplete(String obFormalitiesComplete) {
-		this.obFormalitiesComplete = obFormalitiesComplete;
+	public void setObFormalities(String obFormalities) {
+		this.obFormalities = obFormalities;
 	}
 
 	public String getCreated_at() {
@@ -171,14 +171,6 @@ public class Onboardee {
 	public void setLast_modified(String last_modified) {
 		this.last_modified = last_modified;
 	}
-
-//	public List<Skill> getSkills() {
-//		return skills;
-//	}
-//
-//	public void setSkills(List<Skill> skills) {
-//		this.skills = skills;
-//	}
 
 	@Override
 	public int hashCode() {
@@ -207,9 +199,10 @@ public class Onboardee {
 
 	@Override
 	public String toString() {
-		return "Onboardee [id=" + id + ", name=" + name + ", email=" + email + ", joiningCity=" + joiningCity + ", mno="
-				+ mno + ", obStatus=" + obStatus + ", eta=" + eta + ", bgcComplete=" + bgcComplete
-				+ ", graduationComplete=" + graduationComplete + ", obFormalitiesComplete=" + obFormalitiesComplete
-				+ ", created_at=" + created_at + ", last_modified=" + last_modified + "]";
+		return "Onboardee [id=" + id + ", name=" + name + ", email=" + email + ", joiningCity=" + joiningCity + ", dob="
+				+ dob + ", mno=" + mno + ", obStatus=" + obStatus + ", joiningDate=" + joiningDate + ", obDate="
+				+ obDate + ", eta=" + eta + ", bgc=" + bgc + ", graduation=" + graduation + ", obFormalities="
+				+ obFormalities + ", created_at=" + created_at + ", last_modified=" + last_modified + "]";
 	}
+
 }

@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.accolite.au.onboarding.models.Onboardee;
 import com.accolite.au.onboarding.services.OnboardeeService;
-import com.fasterxml.jackson.databind.node.ObjectNode;
 
 @CrossOrigin
 @RestController
@@ -40,7 +39,7 @@ public class OnboardeeController {
 	}
 	
 	@PutMapping("/onboardee/{id}")  
-	private Onboardee update(@PathVariable Long id, @RequestBody Onboardee onboardee) {  
+	private Onboardee update(@PathVariable Long id, @RequestBody Onboardee onboardee) {
 		return onboardeeService.updateOnboardee(id, onboardee);  
 	}  
 	

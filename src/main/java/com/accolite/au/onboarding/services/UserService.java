@@ -36,12 +36,12 @@ public class UserService {
 	}
 	
 //	temp-implementation, need to modify the verification method
-	public String verifyUser(String email, String password) {
+	public User verifyUser(String email, String password) {
 		User user = userRepository.findFirstByEmail(email);
 		if(user!=null && user.getPassword().equals(password))
-			return "\"Login Successful! :D\"";
+			return user;
 		else
-			return "\"Login Unsuccessful! :(\"";
+			return null;
 				
 	}
 

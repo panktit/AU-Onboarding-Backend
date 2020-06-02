@@ -40,14 +40,9 @@ public class UserController {
 	}
 	
 	@PostMapping("/login")
-	public String verifyUser(@RequestBody ObjectNode objectNode) {
+	public User verifyUser(@RequestBody ObjectNode objectNode) {
 		String email = objectNode.get("email").asText();
 		String password = objectNode.get("password").asText();
 		return userService.verifyUser(email, password);
-	}
-	
-	@GetMapping("/glogin")
-	public String googleLogin() {
-		return "\"Wassup\"";
 	}
 }
