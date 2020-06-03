@@ -19,6 +19,8 @@ public class OnboardeeService {
 	private OnboardeeRepository onboardeeRepository;
 	
 	SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");  
+	
+	
 	public List<Onboardee> getAllOnboardees() {
 
         Iterable<Onboardee> onboardeeItr = onboardeeRepository.findAll();
@@ -30,6 +32,7 @@ public class OnboardeeService {
 	
 	public Onboardee saveOnboardee(Onboardee newOnboardee) {
 //		can do server-side validation before saving into db
+		System.out.println("To create: "+newOnboardee);
 		newOnboardee.setCreated_at(formatter.format(new Date()));
 		newOnboardee.setLast_modified(formatter.format(new Date()));
 		return onboardeeRepository.save(newOnboardee);
@@ -49,6 +52,7 @@ public class OnboardeeService {
 		
 		ob.setJoiningDate(onboardee.getJoiningDate());
 		ob.setJoiningCity(onboardee.getJoiningCity());
+		ob.setJoiningAddress(onboardee.getJoiningAddress());
 		
 		ob.setObDate(onboardee.getObDate());
 		ob.setObStatus(onboardee.getObStatus());
@@ -63,6 +67,10 @@ public class OnboardeeService {
 	
 	public void deleteOnboardee(Long id) {
 		onboardeeRepository.deleteById(id);
+	}
+
+	public List<Object> getCityData() {
+		return onboardeeRepository.findJoiningCityWithCount();
 	}
 
 }

@@ -1,9 +1,16 @@
 package com.accolite.au.onboarding.models;
 
+import java.util.HashSet;
+import java.util.Set;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Skill {
@@ -13,8 +20,15 @@ public class Skill {
 	private Long id;
 	private String name;
 	
+//	@ManyToMany(targetEntity = Onboardee.class, mappedBy = "obSkills", cascade = {CascadeType.PERSIST, CascadeType.DETACH,CascadeType.MERGE,CascadeType.REFRESH})
+//	private Set<Onboardee> onboardees = new HashSet<>();
+	
+	@ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name="ob_id")
+    private Onboardee onboardee;
+	
 	public Skill() {}
-
+	
 	public Skill(String name) {
 		this.name = name;
 	}
@@ -33,6 +47,14 @@ public class Skill {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public Onboardee getOnboardee() {
+		return onboardee;
+	}
+
+	public void setOnboardee(Onboardee onboardee) {
+		this.onboardee = onboardee;
 	}
 
 	@Override
@@ -60,4 +82,8 @@ public class Skill {
 		return true;
 	}
 
+	@Override
+	public String toString() {
+		return "Skill [id=" + id + ", name=" + name + ", onboardee=" + onboardee + "]";
+	}
 }

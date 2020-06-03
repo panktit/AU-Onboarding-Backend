@@ -32,9 +32,15 @@ public class OnboardeeController {
 	public Onboardee getOnboardee(@PathVariable Long id) {
 		return onboardeeService.getOnboardee(id);
 	}
+	
+	@GetMapping("/onboardees/joiningCities")
+	public List<Object> getCityNames() {
+		return onboardeeService.getCityData();
+	}
 		
-	@PostMapping("/onboardees")
+	@PostMapping("/onboardees")	
 	public Onboardee saveOnboardee(@RequestBody Onboardee newOnboardee) {
+		System.out.println("Controller To create: "+newOnboardee);
 		return onboardeeService.saveOnboardee(newOnboardee);
 	}
 	

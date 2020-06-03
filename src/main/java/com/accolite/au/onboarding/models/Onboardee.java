@@ -1,13 +1,25 @@
 package com.accolite.au.onboarding.models;
 
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 @Entity
+@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class,
+property = "id")
 public class Onboardee {
 
 	@Id
@@ -27,9 +39,20 @@ public class Onboardee {
 	private String obFormalities;
 	private String created_at;
 	private String last_modified;
-//	List<Skill> skills;
+	
+	@ManyToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name = "add_id")
+	private Address joiningAddress;
+	
+	@OneToMany(mappedBy = "onboardee", cascade = CascadeType.ALL)
+	private Set<Skill> obSkills = new HashSet<>();
 
 	public Onboardee() {
+	}
+	
+	public Onboardee(String name, String obStatus) {
+		this.name = name;
+		this.obStatus = obStatus;
 	}
 
 	public Onboardee(Long id, String name, String email, String joiningCity, String dob, String mno, String obStatus,
@@ -171,6 +194,24 @@ public class Onboardee {
 	public void setLast_modified(String last_modified) {
 		this.last_modified = last_modified;
 	}
+	
+	
+
+	public Address getJoiningAddress() {
+		return joiningAddress;
+	}
+
+	public void setJoiningAddress(Address joiningAddress) {
+		this.joiningAddress = joiningAddress;
+	}
+
+	public Set<Skill> getObSkills() {
+		return obSkills;
+	}
+
+	public void setObSkills(Set<Skill> obSkills) {
+		this.obSkills = obSkills;
+	}
 
 	@Override
 	public int hashCode() {
@@ -202,7 +243,7 @@ public class Onboardee {
 		return "Onboardee [id=" + id + ", name=" + name + ", email=" + email + ", joiningCity=" + joiningCity + ", dob="
 				+ dob + ", mno=" + mno + ", obStatus=" + obStatus + ", joiningDate=" + joiningDate + ", obDate="
 				+ obDate + ", eta=" + eta + ", bgc=" + bgc + ", graduation=" + graduation + ", obFormalities="
-				+ obFormalities + ", created_at=" + created_at + ", last_modified=" + last_modified + "]";
+				+ obFormalities + ", created_at=" + created_at + ", last_modified=" + last_modified
+				+ ", joiningAddress=" + joiningAddress + ", obSkills=" + obSkills + "]";
 	}
-
 }

@@ -29,8 +29,6 @@ public class Address {
 		this.pincode = pincode;
 	}
 
-
-
 	public Long getId() {
 		return id;
 	}
@@ -103,12 +101,18 @@ public class Address {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Address other = (Address) obj;
+		Address other = (Address) obj; 
 		if (id == null) {
 			if (other.id != null)
 				return false;
 		} else if (!id.equals(other.id))
 			return false;
 		return true;
+	}
+
+	@Override
+	public String toString() {
+		return "Address [id=" + id + ", line1=" + line1 + ", line2=" + line2 + ", city=" + city + ", state=" + state
+				+ ", country=" + country + ", pincode=" + pincode + "]";
 	}
 }
