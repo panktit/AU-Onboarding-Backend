@@ -22,6 +22,7 @@ public class BootstrapData implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
+		
 //		Address add1 = new Address("221B", "Baker Steet", "London ", "state", "country", 289828);
 //		
 //		Skill skill1 = new Skill("Crime Detection");
