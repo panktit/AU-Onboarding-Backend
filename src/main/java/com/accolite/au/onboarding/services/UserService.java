@@ -17,8 +17,7 @@ public class UserService {
 	@Autowired
 	private UserRepository userRepository;
 	
-	public List<User> getAllUsers() {
-
+	public List<User> getAllUsers() {	
         Iterable<User> userItr = userRepository.findAll();
         List<User> users = StreamSupport
         					.stream(userItr.spliterator(), false)
@@ -43,6 +42,11 @@ public class UserService {
 		else
 			return null;
 				
+	}
+	
+	public User checkAccess (String email) {
+		User user = userRepository.findFirstByEmail(email);
+		return user;
 	}
 
 }

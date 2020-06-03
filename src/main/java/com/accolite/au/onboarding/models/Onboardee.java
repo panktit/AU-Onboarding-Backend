@@ -1,7 +1,7 @@
 package com.accolite.au.onboarding.models;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
@@ -12,7 +12,6 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
@@ -21,7 +20,6 @@ import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class,
 property = "id")
 public class Onboardee {
-
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
@@ -44,8 +42,11 @@ public class Onboardee {
 	@JoinColumn(name = "add_id")
 	private Address joiningAddress;
 	
-	@OneToMany(mappedBy = "onboardee", cascade = CascadeType.ALL)
-	private Set<Skill> obSkills = new HashSet<>();
+	@ManyToMany(cascade = CascadeType.ALL)
+	@JoinTable(name="obSkills", 
+				joinColumns = @JoinColumn(name="ob_id"),
+				inverseJoinColumns = @JoinColumn(name="skill_id"))
+	private List<Skill> obSkills = new ArrayList<>();
 
 	public Onboardee() {
 	}
@@ -205,11 +206,11 @@ public class Onboardee {
 		this.joiningAddress = joiningAddress;
 	}
 
-	public Set<Skill> getObSkills() {
+	public List<Skill> getObSkills() {
 		return obSkills;
 	}
 
-	public void setObSkills(Set<Skill> obSkills) {
+	public void setObSkills(List<Skill> obSkills) {
 		this.obSkills = obSkills;
 	}
 

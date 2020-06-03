@@ -45,4 +45,10 @@ public class UserController {
 		String password = objectNode.get("password").asText();
 		return userService.verifyUser(email, password);
 	}
+	
+	@PostMapping("/check")
+	public User checkUserAccess(@RequestBody ObjectNode objectNode) {
+		String email = objectNode.get("email").asText();
+		return userService.checkAccess(email);
+	}
 }

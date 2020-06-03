@@ -1,5 +1,9 @@
 package com.accolite.au.onboarding.services;
 
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.StreamSupport;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,6 +15,19 @@ public class SkillService {
 	
 	@Autowired
 	private SkillRepository skillRepository;
+	
+	public List<Skill> getAllSkills() {
+        Iterable<Skill> skillItr = skillRepository.findAll();
+        List<Skill> skills = StreamSupport
+        					.stream(skillItr.spliterator(), false)
+        					.collect(Collectors.toList());
+        return skills;
+    }
+	
+	
+	public Skill getSkill(Long id) {
+		return skillRepository.findById(id).get();
+	}
 	
 	public Skill saveSkill(Skill newSkill) {
 		System.out.println("Create skill: "+newSkill);

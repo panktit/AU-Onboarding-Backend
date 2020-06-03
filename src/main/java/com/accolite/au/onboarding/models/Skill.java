@@ -1,34 +1,34 @@
 package com.accolite.au.onboarding.models;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.ManyToMany;
-import javax.persistence.ManyToOne;
+
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 @Entity
+@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
 public class Skill {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 	private String name;
-	
-//	@ManyToMany(targetEntity = Onboardee.class, mappedBy = "obSkills", cascade = {CascadeType.PERSIST, CascadeType.DETACH,CascadeType.MERGE,CascadeType.REFRESH})
-//	private Set<Onboardee> onboardees = new HashSet<>();
-	
-	@ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name="ob_id")
-    private Onboardee onboardee;
-	
-	public Skill() {}
-	
+
+	@ManyToMany(mappedBy = "obSkills", cascade = CascadeType.ALL)
+	private List<Onboardee> onboardees = new ArrayList<>();
+
+	public Skill() {
+	}
+
 	public Skill(String name) {
 		this.name = name;
 	}
@@ -49,12 +49,12 @@ public class Skill {
 		this.name = name;
 	}
 
-	public Onboardee getOnboardee() {
-		return onboardee;
+	public List<Onboardee> getOnboardees() {
+		return onboardees;
 	}
 
-	public void setOnboardee(Onboardee onboardee) {
-		this.onboardee = onboardee;
+	public void setOnboardees(List<Onboardee> onboardees) {
+		this.onboardees = onboardees;
 	}
 
 	@Override
@@ -84,6 +84,6 @@ public class Skill {
 
 	@Override
 	public String toString() {
-		return "Skill [id=" + id + ", name=" + name + ", onboardee=" + onboardee + "]";
+		return "Skill [id=" + id + ", name=" + name + ", onboardees=" + onboardees + "]";
 	}
 }

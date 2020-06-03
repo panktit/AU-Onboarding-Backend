@@ -1,13 +1,18 @@
 package com.accolite.au.onboarding.models;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 @Entity
 public class User {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
@@ -15,9 +20,13 @@ public class User {
 	private String email;
 	private String password;
 	private String access_level;
-	
-	public User() {}
-	
+
+	@OneToMany(cascade = CascadeType.ALL)
+	private List<Log> logs = new ArrayList<Log>();
+
+	public User() {
+	}
+
 	public User(String name, String email, String password, String access_level) {
 		this.name = name;
 		this.email = email;
@@ -64,6 +73,15 @@ public class User {
 	public void setAccess_level(String access_level) {
 		this.access_level = access_level;
 	}
+	
+
+	public List<Log> getLogs() {
+		return logs;
+	}
+
+	public void setLogs(List<Log> logs) {
+		this.logs = logs;
+	}
 
 	@Override
 	public int hashCode() {
@@ -93,6 +111,6 @@ public class User {
 	@Override
 	public String toString() {
 		return "User [id=" + id + ", name=" + name + ", email=" + email + ", password=" + password + ", access_level="
-				+ access_level + "]";
+				+ access_level + ", logs=" + logs + "]";
 	}
 }
