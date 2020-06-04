@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.accolite.au.onboarding.models.Onboardee;
+import com.accolite.au.onboarding.models.Skill;
 import com.accolite.au.onboarding.services.OnboardeeService;
 
 @CrossOrigin
@@ -33,6 +34,11 @@ public class OnboardeeController {
 		return onboardeeService.getOnboardee(id);
 	}
 	
+	@GetMapping("/onboardee/{id}/skills")
+	public List<Skill> getOnboardeeSkills(@PathVariable Long id) {
+		return onboardeeService.getOnboardeeSkills(id);
+	}
+	
 	@GetMapping("/onboardees/joiningCities")
 	public List<Object> getCityNames() {
 		return onboardeeService.getCityData();
@@ -50,7 +56,7 @@ public class OnboardeeController {
 	}  
 	
 	@DeleteMapping("/onboardee/{id}")
-	private void deleteOnboardee(@PathVariable Long id) {
-		onboardeeService.deleteOnboardee(id);
+	private String deleteOnboardee(@PathVariable Long id) {
+		return onboardeeService.deleteOnboardee(id);
 	}
 }

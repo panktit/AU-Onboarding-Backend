@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.accolite.au.onboarding.models.Demand;
+import com.accolite.au.onboarding.models.Skill;
 import com.accolite.au.onboarding.repositories.DemandRepository;
 
 @Service
@@ -34,7 +35,18 @@ public class DemandService {
 	}
 	
 	public Demand getDemand(Long id) {
-		return demandRepository.findById(id).get();
+		if(demandRepository.existsById(id))
+			return demandRepository.findById(id).get();
+		else
+			return null;
 	}
 
+	public List<Skill> getDemandSkills(Long id) {
+		if(demandRepository.existsById(id)) {
+			Demand dmd = demandRepository.findById(id).get();
+			return dmd.getDmdSkills();
+		}
+		else
+			return null;
+	}
 }

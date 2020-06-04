@@ -17,7 +17,9 @@ public class Demand {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 	private String hiringManager;
-	private int numRequired;
+	private String role;
+	private String department;
+	private String team;
 	private String created_at;
 	
 	@OneToMany(cascade = CascadeType.ALL)
@@ -25,13 +27,13 @@ public class Demand {
 
 	public Demand() {}
 
-	public Demand(String hiringManager, int numRequired, String created_at) {
+	public Demand(String hiringManager, String role, String department, String team, String created_at) {
 		this.hiringManager = hiringManager;
-		this.numRequired = numRequired;
+		this.role = role;
+		this.department = department;
+		this.team = team;
 		this.created_at = created_at;
 	}
-
-
 
 	public Long getId() {
 		return id;
@@ -49,20 +51,28 @@ public class Demand {
 		this.hiringManager = hiringManager;
 	}
 
-	public int getNumRequired() {
-		return numRequired;
+	public String getRole() {
+		return role;
 	}
 
-	public void setNumRequired(int numRequired) {
-		this.numRequired = numRequired;
+	public void setRole(String role) {
+		this.role = role;
 	}
 
-	public List<Skill> getDmdSkills() {
-		return dmdSkills;
+	public String getDepartment() {
+		return department;
 	}
 
-	public void setDmdSkills(List<Skill> dmdSkills) {
-		this.dmdSkills = dmdSkills;
+	public void setDepartment(String department) {
+		this.department = department;
+	}
+
+	public String getTeam() {
+		return team;
+	}
+
+	public void setTeam(String team) {
+		this.team = team;
 	}
 
 	public String getCreated_at() {
@@ -71,6 +81,14 @@ public class Demand {
 
 	public void setCreated_at(String created_at) {
 		this.created_at = created_at;
+	}
+
+	public List<Skill> getDmdSkills() {
+		return dmdSkills;
+	}
+
+	public void setDmdSkills(List<Skill> dmdSkills) {
+		this.dmdSkills = dmdSkills;
 	}
 
 	@Override
@@ -100,7 +118,7 @@ public class Demand {
 
 	@Override
 	public String toString() {
-		return "Demand [id=" + id + ", hiringManager=" + hiringManager + ", numRequired=" + numRequired
-				+ ", created_at=" + created_at + ", dmdSkills=" + dmdSkills + "]";
+		return "Demand [id=" + id + ", hiringManager=" + hiringManager + ", role=" + role + ", department=" + department
+				+ ", team=" + team + ", created_at=" + created_at + ", dmdSkills=" + dmdSkills + "]";
 	}
 }

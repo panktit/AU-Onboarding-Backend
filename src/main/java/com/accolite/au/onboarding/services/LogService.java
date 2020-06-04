@@ -35,7 +35,10 @@ public class LogService {
 	}
 	
 	public Log getLog(Long id) {
-		return logRepository.findById(id).get();
+		if(logRepository.existsById(id))
+			return logRepository.findById(id).get();
+		else 
+			return null;
 	}
 
 }

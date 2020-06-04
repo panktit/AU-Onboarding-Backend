@@ -26,7 +26,10 @@ public class SkillService {
 	
 	
 	public Skill getSkill(Long id) {
-		return skillRepository.findById(id).get();
+		if(skillRepository.existsById(id))
+			return skillRepository.findById(id).get();
+		else
+			return null;
 	}
 	
 	public Skill saveSkill(Skill newSkill) {

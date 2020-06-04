@@ -31,7 +31,10 @@ public class UserService {
 	}
 	
 	public User getUser(Long id) {
-		return userRepository.findById(id).get();
+		if(userRepository.existsById(id))
+			return userRepository.findById(id).get();
+		else
+			return null;
 	}
 	
 //	temp-implementation, need to modify the verification method

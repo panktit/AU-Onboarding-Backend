@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.accolite.au.onboarding.models.Demand;
+import com.accolite.au.onboarding.models.Skill;
 import com.accolite.au.onboarding.services.DemandService;
 
 @CrossOrigin
@@ -29,7 +30,11 @@ public class DemandController {
 	public Demand getDemand(@PathVariable Long id) {
 		return demandService.getDemand(id);
 	}
-
+	
+	@GetMapping("/demand/{id}/skills")
+	public List<Skill> getDemandSkills(@PathVariable Long id) {
+		return demandService.getDemandSkills(id);
+	}
 	
 	@PostMapping("/demands")
 	public Demand saveDemand(@RequestBody Demand newDemand) {

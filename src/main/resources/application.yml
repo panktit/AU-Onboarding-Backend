@@ -7,14 +7,6 @@ spring:
   jpa:
     generate-ddl: true
     hibernate:
-      ddl-auto: update
-#  security:
-#    oauth2:
-#      client:
-#        registration:
-#          google:
-#            client-id: 680184289964-vs2ktb5joom2rdu4ebtpvda7dgpivncp.apps.googleusercontent.com
-#            client-secret: Xq5t3USDXwNWpaWnCyAj00x2
-          
+      ddl-auto: update    
           
     

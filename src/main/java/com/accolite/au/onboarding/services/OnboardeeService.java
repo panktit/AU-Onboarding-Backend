@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.accolite.au.onboarding.models.Onboardee;
+import com.accolite.au.onboarding.models.Skill;
 import com.accolite.au.onboarding.repositories.OnboardeeRepository;
 
 @Service
@@ -39,39 +40,62 @@ public class OnboardeeService {
 	}
 	
 	public Onboardee getOnboardee(Long id) {
-		return onboardeeRepository.findById(id).get();
+		if(onboardeeRepository.existsById(id))
+			return onboardeeRepository.findById(id).get();
+		else
+			return null;
 	}
 
 	public Onboardee updateOnboardee(Long id, Onboardee onboardee) {
-		Onboardee ob = onboardeeRepository.findById(id).get();
-		
-		ob.setName(onboardee.getName());
-		ob.setEmail(onboardee.getEmail());
-		ob.setDob(onboardee.getDob());
-		ob.setMno(onboardee.getMno());
-		ob.setObSkills(onboardee.getObSkills());
-		
-		ob.setJoiningDate(onboardee.getJoiningDate());
-		ob.setJoiningCity(onboardee.getJoiningCity());
-		ob.setJoiningAddress(onboardee.getJoiningAddress());
-		
-		ob.setObDate(onboardee.getObDate());
-		ob.setObStatus(onboardee.getObStatus());
-		ob.setBgc(onboardee.getBgc());
-		ob.setGraduation(onboardee.getGraduation());
-		ob.setObFormalities(onboardee.getObFormalities());
-		ob.setEta(onboardee.getEta());
-		
-		ob.setLast_modified(formatter.format(new Date()));
-		return onboardeeRepository.save(ob);
+		if(onboardeeRepository.existsById(id)) {
+			Onboardee ob = onboardeeRepository.findById(id).get();
+			
+			ob.setName(onboardee.getName());
+			ob.setEmail(onboardee.getEmail());
+			ob.setDob(onboardee.getDob());
+			ob.setMno(onboardee.getMno());
+			ob.setObSkills(onboardee.getObSkills());
+			
+			ob.setJoiningDate(onboardee.getJoiningDate());
+			ob.setJoiningCity(onboardee.getJoiningCity());
+			ob.setJoiningAddress(onboardee.getJoiningAddress());
+			
+			ob.setObDate(onboardee.getObDate());
+			ob.setObStatus(onboardee.getObStatus());
+			ob.setBgc(onboardee.getBgc());
+			ob.setGraduation(onboardee.getGraduation());
+			ob.setObFormalities(onboardee.getObFormalities());
+			ob.setEta(onboardee.getEta());
+			
+			ob.setLast_modified(formatter.format(new Date()));
+			return onboardeeRepository.save(ob);
+		}
+		else
+			return null;
 	}
 	
-	public void deleteOnboardee(Long id) {
-		onboardeeRepository.deleteById(id);
+	public String deleteOnboardee(Long id) {
+		if(onboardeeRepository.existsById(id)) {
+			onboardeeRepository.deleteById(id);
+			return "\"Deletion Successful! :D\"";
+		}
+			
+		else
+			return "\"Onboardee not found! :(\"";
+			
 	}
 
 	public List<Object> getCityData() {
 		return onboardeeRepository.findJoiningCityWithCount();
+	}
+
+	public List<Skill> getOnboardeeSkills(Long id) {
+		if(onboardeeRepository.existsById(id)) {
+			Onboardee ob = onboardeeRepository.findById(id).get();
+			return ob.getObSkills();
+		}	
+		else
+			return null;
 	}
 
 }
