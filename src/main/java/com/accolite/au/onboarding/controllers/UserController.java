@@ -51,4 +51,12 @@ public class UserController {
 		String email = objectNode.get("email").asText();
 		return userService.checkAccess(email);
 	}
+	
+	@PostMapping("/user/log")
+	public User addUserLog(@RequestBody ObjectNode objectNode) {
+		String name = objectNode.get("name").asText();
+		String type = objectNode.get("type").asText();
+		String description = objectNode.get("description").asText();
+		return userService.addLog(name, type, description);
+	}
 }

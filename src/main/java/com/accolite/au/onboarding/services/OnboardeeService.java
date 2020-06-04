@@ -35,7 +35,6 @@ public class OnboardeeService {
 	
 	public Onboardee saveOnboardee(Onboardee newOnboardee) {
 //		can do server-side validation before saving into db
-		System.out.println("To create: "+newOnboardee);
 		newOnboardee.setCreated_at(formatter.format(new Date()));
 		newOnboardee.setLast_modified(formatter.format(new Date()));
 		return onboardeeRepository.save(newOnboardee);

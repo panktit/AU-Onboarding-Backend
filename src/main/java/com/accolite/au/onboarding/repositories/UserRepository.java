@@ -10,5 +10,6 @@ public interface UserRepository extends CrudRepository<User, Long>{
 	
 //	can user Repository<> for custom queries
 	User findFirstByEmail(String email);
+	User findFirstByName(String name);
 
 }

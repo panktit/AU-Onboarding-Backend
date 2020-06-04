@@ -13,6 +13,7 @@ import javax.persistence.OneToOne;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 @Entity
@@ -29,7 +30,6 @@ public class Demand {
 	private String created_at;
 	
 	@OneToOne(cascade =  CascadeType.ALL, mappedBy = "mappedDemand")
-	@JsonIgnore
 	private Onboardee ob;
 	
 	@OneToMany(cascade = CascadeType.ALL)

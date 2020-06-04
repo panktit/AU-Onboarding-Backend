@@ -1,5 +1,7 @@
 package com.accolite.au.onboarding.services;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
@@ -8,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.accolite.au.onboarding.repositories.UserRepository;
-
+import com.accolite.au.onboarding.models.Log;
 import com.accolite.au.onboarding.models.User;
 
 @Service
@@ -16,6 +18,8 @@ public class UserService {
 	
 	@Autowired
 	private UserRepository userRepository;
+	
+	SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");  
 	
 	public List<User> getAllUsers() {	
         Iterable<User> userItr = userRepository.findAll();
@@ -50,6 +54,16 @@ public class UserService {
 	public User checkAccess (String email) {
 		User user = userRepository.findFirstByEmail(email);
 		return user;
+	}
+
+	public User addLog(String name, String type, String description) {
+		User user = userRepository.findFirstByName(name);
+		if(user!=null) {
+			user.getLogs().add(new Log(type, description, formatter.format(new Date())));
+			return userRepository.save(user);
+		}
+		else
+			return null;
 	}
 
 }
