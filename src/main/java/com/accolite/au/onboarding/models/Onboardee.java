@@ -12,6 +12,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
@@ -35,6 +36,11 @@ public class Onboardee {
 	private String bgc;
 	private String graduation;
 	private String obFormalities;
+	
+	@OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "demand_id")
+	private Demand mappedDemand;
+	
 	private String created_at;
 	private String last_modified;
 	
@@ -54,12 +60,11 @@ public class Onboardee {
 	public Onboardee(String name, String obStatus) {
 		this.name = name;
 		this.obStatus = obStatus;
-	}
+	}	
 
-	public Onboardee(Long id, String name, String email, String joiningCity, String dob, String mno, String obStatus,
+	public Onboardee(String name, String email, String joiningCity, String dob, String mno, String obStatus,
 			String joiningDate, String obDate, int eta, String bgc, String graduation, String obFormalities,
-			String created_at, String last_modified) {
-		this.id = id;
+			Demand mappedDemand, String created_at, String last_modified) {
 		this.name = name;
 		this.email = email;
 		this.joiningCity = joiningCity;
@@ -72,6 +77,7 @@ public class Onboardee {
 		this.bgc = bgc;
 		this.graduation = graduation;
 		this.obFormalities = obFormalities;
+		this.mappedDemand = mappedDemand;
 		this.created_at = created_at;
 		this.last_modified = last_modified;
 	}
@@ -214,6 +220,14 @@ public class Onboardee {
 		this.obSkills = obSkills;
 	}
 
+	public Demand getMappedDemand() {
+		return mappedDemand;
+	}
+
+	public void setMappedDemand(Demand mappedDemand) {
+		this.mappedDemand = mappedDemand;
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -244,7 +258,7 @@ public class Onboardee {
 		return "Onboardee [id=" + id + ", name=" + name + ", email=" + email + ", joiningCity=" + joiningCity + ", dob="
 				+ dob + ", mno=" + mno + ", obStatus=" + obStatus + ", joiningDate=" + joiningDate + ", obDate="
 				+ obDate + ", eta=" + eta + ", bgc=" + bgc + ", graduation=" + graduation + ", obFormalities="
-				+ obFormalities + ", created_at=" + created_at + ", last_modified=" + last_modified
-				+ ", joiningAddress=" + joiningAddress + ", obSkills=" + obSkills + "]";
+				+ obFormalities + ", mappedDemand=" + mappedDemand + ", created_at=" + created_at + ", last_modified="
+				+ last_modified + ", joiningAddress=" + joiningAddress + ", obSkills=" + obSkills + "]";
 	}
 }

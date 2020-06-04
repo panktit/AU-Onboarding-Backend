@@ -9,8 +9,14 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
+
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 @Entity
+@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
 public class Demand {
 	
 	@Id
@@ -22,17 +28,22 @@ public class Demand {
 	private String team;
 	private String created_at;
 	
+	@OneToOne(cascade =  CascadeType.ALL, mappedBy = "mappedDemand")
+	@JsonIgnore
+	private Onboardee ob;
+	
 	@OneToMany(cascade = CascadeType.ALL)
 	List<Skill> dmdSkills = new ArrayList<>();
 
 	public Demand() {}
 
-	public Demand(String hiringManager, String role, String department, String team, String created_at) {
+	public Demand(String hiringManager, String role, String department, String team, String created_at, Onboardee ob) {
 		this.hiringManager = hiringManager;
 		this.role = role;
 		this.department = department;
 		this.team = team;
 		this.created_at = created_at;
+		this.ob = ob;
 	}
 
 	public Long getId() {
@@ -91,6 +102,14 @@ public class Demand {
 		this.dmdSkills = dmdSkills;
 	}
 
+	public Onboardee getOb() {
+		return ob;
+	}
+
+	public void setOb(Onboardee ob) {
+		this.ob = ob;
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -119,6 +138,6 @@ public class Demand {
 	@Override
 	public String toString() {
 		return "Demand [id=" + id + ", hiringManager=" + hiringManager + ", role=" + role + ", department=" + department
-				+ ", team=" + team + ", created_at=" + created_at + ", dmdSkills=" + dmdSkills + "]";
+				+ ", team=" + team + ", created_at=" + created_at + ", ob=" + ob + ", dmdSkills=" + dmdSkills + "]";
 	}
 }

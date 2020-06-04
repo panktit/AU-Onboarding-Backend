@@ -56,6 +56,7 @@ public class OnboardeeService {
 			ob.setMno(onboardee.getMno());
 			ob.setObSkills(onboardee.getObSkills());
 			
+			ob.setMappedDemand(onboardee.getMappedDemand());
 			ob.setJoiningDate(onboardee.getJoiningDate());
 			ob.setJoiningCity(onboardee.getJoiningCity());
 			ob.setJoiningAddress(onboardee.getJoiningAddress());
