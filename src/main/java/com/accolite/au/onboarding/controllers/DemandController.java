@@ -1,6 +1,8 @@
 package com.accolite.au.onboarding.controllers;
 
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -34,6 +36,11 @@ public class DemandController {
 	@GetMapping("/demand/{id}/skills")
 	public List<Skill> getDemandSkills(@PathVariable Long id) {
 		return demandService.getDemandSkills(id);
+	}
+	
+	@GetMapping("/demands/skills")
+	public Map<String, Integer> getAllDemandSkills() {
+		return demandService.getAllDemandSkills();
 	}
 	
 	@PostMapping("/demands")

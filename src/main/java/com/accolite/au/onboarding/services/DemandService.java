@@ -2,10 +2,11 @@ package com.accolite.au.onboarding.services;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -48,5 +49,19 @@ public class DemandService {
 		}
 		else
 			return null;
+	}
+
+	public Map<String, Integer> getAllDemandSkills() {
+		Map<String, Integer> skillCount = new HashMap<>();
+		List<Demand> demands = getAllDemands();
+		for(Demand d : demands) {
+			for(Skill s : d.getDmdSkills()) {
+				if(skillCount.containsKey(s.getName()))
+					skillCount.put(s.getName(), skillCount.get(s.getName())+1);
+				else
+					skillCount.put(s.getName(), 1);
+			}
+		}
+		return skillCount;
 	}
 }

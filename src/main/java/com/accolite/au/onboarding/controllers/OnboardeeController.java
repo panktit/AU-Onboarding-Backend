@@ -1,6 +1,7 @@
 package com.accolite.au.onboarding.controllers;
 
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -13,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.accolite.au.onboarding.models.Onboardee;
-import com.accolite.au.onboarding.models.Skill;
 import com.accolite.au.onboarding.services.OnboardeeService;
 
 @CrossOrigin
@@ -34,9 +34,9 @@ public class OnboardeeController {
 		return onboardeeService.getOnboardee(id);
 	}
 	
-	@GetMapping("/onboardee/{id}/skills")
-	public List<Skill> getOnboardeeSkills(@PathVariable Long id) {
-		return onboardeeService.getOnboardeeSkills(id);
+	@GetMapping("/onboardees/selected/skills")
+	public Map<String, Integer> getSelectedOnboardeeSkills() {
+		return onboardeeService.getSelectedOnboardeeSkills();
 	}
 	
 	@GetMapping("/onboardees/joiningCities")
