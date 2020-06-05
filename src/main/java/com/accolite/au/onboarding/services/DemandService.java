@@ -10,10 +10,15 @@ import java.util.stream.StreamSupport;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.accolite.au.onboarding.exceptions.EntityInstanceNotFoundException;
 import com.accolite.au.onboarding.models.Demand;
 import com.accolite.au.onboarding.models.Skill;
 import com.accolite.au.onboarding.repositories.DemandRepository;
 
+import lombok.extern.slf4j.Slf4j;
+
+
+@Slf4j
 @Service
 public class DemandService {
 	
@@ -23,6 +28,7 @@ public class DemandService {
 	SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 	
 	public List<Demand> getAllDemands() {
+		log.info("Demand service call to get all demands");
         Iterable<Demand> demandItr = demandRepository.findAll();
         List<Demand> demands = StreamSupport
         					.stream(demandItr.spliterator(), false)
@@ -31,27 +37,23 @@ public class DemandService {
     }
 	
 	public Demand saveDemand(Demand newDemand) {
+		log.info("Demand service call to save new demand");
 		newDemand.setCreated_at(formatter.format(new Date()));
 		return demandRepository.save(newDemand);
 	}
 	
-	public Demand getDemand(Long id) {
+	public Demand getDemand(Long id) throws EntityInstanceNotFoundException {
+		log.info("Demand service call to get demand with id: "+id);
 		if(demandRepository.existsById(id))
 			return demandRepository.findById(id).get();
-		else
-			return null;
-	}
-
-	public List<Skill> getDemandSkills(Long id) {
-		if(demandRepository.existsById(id)) {
-			Demand dmd = demandRepository.findById(id).get();
-			return dmd.getDmdSkills();
+		else {
+			log.warn("The requested entity does not exist");
+			throw new EntityInstanceNotFoundException();
 		}
-		else
-			return null;
 	}
 
 	public Map<String, Integer> getAllDemandSkills() {
+		log.info("Demand service call to get skills of all demands");
 		Map<String, Integer> skillCount = new HashMap<>();
 		List<Demand> demands = getAllDemands();
 		for(Demand d : demands) {

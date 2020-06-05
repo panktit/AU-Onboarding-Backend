@@ -22,7 +22,7 @@ public class User {
 	private String access_level;
 
 	@OneToMany(cascade = CascadeType.ALL)
-	private List<Log> logs = new ArrayList<Log>();
+	private List<ULog> logs = new ArrayList<ULog>();
 
 	public User() {
 	}
@@ -75,11 +75,11 @@ public class User {
 	}
 	
 
-	public List<Log> getLogs() {
+	public List<ULog> getLogs() {
 		return logs;
 	}
 
-	public void setLogs(List<Log> logs) {
+	public void setLogs(List<ULog> logs) {
 		this.logs = logs;
 	}
 
