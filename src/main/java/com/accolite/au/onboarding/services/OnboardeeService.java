@@ -86,11 +86,12 @@ public class OnboardeeService {
 		}
 	}
 	
-	public String deleteOnboardee(Long id) throws EntityInstanceNotFoundException {
+	public Onboardee deleteOnboardee(Long id) throws EntityInstanceNotFoundException {
 		log.info("Onboardee service call to delete onboardee with id: "+id);
 		if(onboardeeRepository.existsById(id)) {
+			Onboardee deleted = onboardeeRepository.findById(id).get();
 			onboardeeRepository.deleteById(id);
-			return "\"Deletion Successful! :D\"";
+			return deleted;
 		}
 			
 		else {

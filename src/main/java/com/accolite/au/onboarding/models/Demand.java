@@ -34,6 +34,13 @@ public class Demand {
 	List<Skill> dmdSkills = new ArrayList<>();
 
 	public Demand() {}
+	
+	public Demand(String hiringManager, String role, String department, String team) {
+		this.hiringManager = hiringManager;
+		this.role = role;
+		this.department = department;
+		this.team = team;
+	}
 
 	public Demand(String hiringManager, String role, String department, String team, String created_at, Onboardee ob) {
 		this.hiringManager = hiringManager;

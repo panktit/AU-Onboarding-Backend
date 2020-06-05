@@ -59,14 +59,15 @@ public class Onboardee {
 	public Onboardee() {
 	}
 	
-	public Onboardee(String name, String obStatus) {
+	public Onboardee(Long id, String name, String obStatus) {
+		this.id=id;
 		this.name = name;
 		this.obStatus = obStatus;
 	}	
 
 	public Onboardee(String name, String email, String joiningCity, String dob, String mno, String obStatus,
 			String joiningDate, String obDate, int eta, String bgc, String graduation, String obFormalities,
-			Demand mappedDemand, String created_at, String last_modified) {
+			String created_at, String last_modified) {
 		this.name = name;
 		this.email = email;
 		this.joiningCity = joiningCity;
@@ -79,7 +80,6 @@ public class Onboardee {
 		this.bgc = bgc;
 		this.graduation = graduation;
 		this.obFormalities = obFormalities;
-		this.mappedDemand = mappedDemand;
 		this.created_at = created_at;
 		this.last_modified = last_modified;
 	}

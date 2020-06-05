@@ -3059,3 +3059,63 @@ Using generated security password: 54a60458-9c0c-4abf-bc34-2f8c7f0b2a5c
 2020-06-05 13:45:00.908  INFO 10720 --- [restartedMain] c.a.a.o.AuOnboardingBackendApplication   : Started AuOnboardingBackendApplication in 3.128 seconds (JVM running for 4976.775)
 2020-06-05 13:45:00.912  INFO 10720 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
 2020-06-05 13:45:00.912  INFO 10720 --- [restartedMain] c.a.a.o.AuOnboardingBackendApplication   : Application started
+2020-06-05 16:15:58.395  INFO 21100 --- [main] .a.o.AuOnboardingBackendApplicationTests : Starting AuOnboardingBackendApplicationTests on DESKTOP-H6Q22V6 with PID 21100 (started by Pankti in C:\Users\Pankti\eclipse-workspace\AU-Onboarding-Backend)
+2020-06-05 16:15:58.399  INFO 21100 --- [main] .a.o.AuOnboardingBackendApplicationTests : No active profile set, falling back to default profiles: default
+2020-06-05 16:16:01.346  INFO 21100 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-05 16:16:01.508  INFO 21100 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 146ms. Found 4 JPA repository interfaces.
+2020-06-05 16:16:03.466  INFO 21100 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-05 16:16:03.734  INFO 21100 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-05 16:16:03.898  WARN 21100 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-05 16:16:03.932  INFO 21100 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-06-05 16:16:04.429  INFO 21100 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-05 16:16:05.107  WARN 21100 --- [main] o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-06-05 16:16:05.108  WARN 21100 --- [main] o.s.d.rest.webmvc.halbrowser.HalBrowser  : Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2020-06-05 16:16:05.108  WARN 21100 --- [main] o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-06-05 16:16:06.423  INFO 21100 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-05 16:16:07.803  INFO 21100 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-05 16:16:07.924  INFO 21100 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-06-05 16:16:12.933  INFO 21100 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-05 16:16:12.949  INFO 21100 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-05 16:16:16.320  INFO 21100 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 81b0065f-5959-4f66-b31c-e85c2919577b
+
+2020-06-05 16:16:16.982  INFO 21100 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1a497286, org.springframework.security.web.context.SecurityContextPersistenceFilter@f18b738, org.springframework.security.web.header.HeaderWriterFilter@4357524b, org.springframework.security.web.authentication.logout.LogoutFilter@79f5a6ed, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@aca3c85, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@69a373fd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@48dff674, org.springframework.security.web.session.SessionManagementFilter@166b11e, org.springframework.security.web.access.ExceptionTranslationFilter@44641d6c]
+2020-06-05 16:16:17.919  INFO 21100 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-06-05 16:16:18.058  INFO 21100 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-06-05 16:16:18.396  INFO 21100 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-06-05 16:16:18.420  INFO 21100 --- [main] .a.o.AuOnboardingBackendApplicationTests : Started AuOnboardingBackendApplicationTests in 21.018 seconds (JVM running for 23.071)
+2020-06-05 16:16:18.838  INFO 21100 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-05 16:16:18.845  INFO 21100 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-05 16:16:18.846  INFO 21100 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-06-05 16:16:18.876  INFO 21100 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-06-05 16:17:49.031  INFO 11576 --- [main] .a.o.AuOnboardingBackendApplicationTests : Starting AuOnboardingBackendApplicationTests on DESKTOP-H6Q22V6 with PID 11576 (started by Pankti in C:\Users\Pankti\eclipse-workspace\AU-Onboarding-Backend)
+2020-06-05 16:17:49.034  INFO 11576 --- [main] .a.o.AuOnboardingBackendApplicationTests : No active profile set, falling back to default profiles: default
+2020-06-05 16:17:51.674  INFO 11576 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-05 16:17:51.850  INFO 11576 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 155ms. Found 4 JPA repository interfaces.
+2020-06-05 16:17:53.670  INFO 11576 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-05 16:17:53.974  INFO 11576 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-05 16:17:54.299  WARN 11576 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-05 16:17:54.398  INFO 11576 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-06-05 16:17:54.997  INFO 11576 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-05 16:17:55.556  WARN 11576 --- [main] o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-06-05 16:17:55.557  WARN 11576 --- [main] o.s.d.rest.webmvc.halbrowser.HalBrowser  : Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2020-06-05 16:17:55.558  WARN 11576 --- [main] o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-06-05 16:17:56.686  INFO 11576 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-05 16:17:57.996  INFO 11576 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-05 16:17:58.106  INFO 11576 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-06-05 16:18:00.725  INFO 11576 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-05 16:18:00.739  INFO 11576 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-05 16:18:04.998  INFO 11576 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 49bee931-744b-409f-911a-887acfa32cb7
+
+2020-06-05 16:18:05.363  INFO 11576 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@730bea0, org.springframework.security.web.context.SecurityContextPersistenceFilter@53cddaf8, org.springframework.security.web.header.HeaderWriterFilter@69a373fd, org.springframework.security.web.authentication.logout.LogoutFilter@bb8ead8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1ccc1026, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@722787b5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@41a16eb3, org.springframework.security.web.session.SessionManagementFilter@1002d192, org.springframework.security.web.access.ExceptionTranslationFilter@2424cb9d]
+2020-06-05 16:18:05.953  INFO 11576 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-06-05 16:18:06.112  INFO 11576 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-06-05 16:18:06.416  INFO 11576 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-06-05 16:18:06.439  INFO 11576 --- [main] .a.o.AuOnboardingBackendApplicationTests : Started AuOnboardingBackendApplicationTests in 18.258 seconds (JVM running for 21.379)
+2020-06-05 16:18:06.850  INFO 11576 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-05 16:18:06.857  INFO 11576 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-05 16:18:06.862  INFO 11576 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-06-05 16:18:06.893  INFO 11576 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

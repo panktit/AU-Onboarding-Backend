@@ -75,13 +75,13 @@ public class OnboardeeController {
 	}  
 	
 	@DeleteMapping("/onboardee/{id}")
-	public String deleteOnboardee(@PathVariable Long id) {
+	public Onboardee deleteOnboardee(@PathVariable Long id) {
 		log.info("Delete request received to delete onboardee with id: "+id);
 		try {
 			return onboardeeService.deleteOnboardee(id);
 		} catch (EntityInstanceNotFoundException e) {
 			log.error("Exception occurred at path /onboardee/"+id+": "+e.getMessage());
-			return "\"Onboardee not found! :(\"";
+			return null;
 		}
 	}
 }

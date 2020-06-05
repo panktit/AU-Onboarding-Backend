@@ -34,11 +34,6 @@ public class UserService {
 		return users;
 	}
 
-	public User saveUser(User newUser) {
-		log.info("Onboardee service call to save new onboardee");
-		return userRepository.save(newUser);
-	}
-
 	public User getUser(Long id) throws EntityInstanceNotFoundException {
 		log.info("Onboardee service call to get onboardee with id: " + id);
 		if (userRepository.existsById(id))
