@@ -17,6 +17,13 @@ public class ULog {
 	
 	public ULog() {}
 	
+	
+	public ULog(String type, String description) {
+		this.type = type;
+		this.description = description;
+	}
+
+
 	public ULog(String type, String description, String created_at) {
 		this.type = type;
 		this.description = description;

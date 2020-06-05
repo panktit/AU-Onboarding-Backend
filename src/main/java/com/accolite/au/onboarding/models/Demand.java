@@ -35,6 +35,15 @@ public class Demand {
 
 	public Demand() {}
 	
+	
+	
+	public Demand(String role, String team) {
+		this.role = role;
+		this.team = team;
+	}
+
+
+
 	public Demand(String hiringManager, String role, String department, String team) {
 		this.hiringManager = hiringManager;
 		this.role = role;

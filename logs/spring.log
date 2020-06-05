@@ -3119,3 +3119,1103 @@ Using generated security password: 49bee931-744b-409f-911a-887acfa32cb7
 2020-06-05 16:18:06.857  INFO 11576 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
 2020-06-05 16:18:06.862  INFO 11576 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2020-06-05 16:18:06.893  INFO 11576 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-06-05 21:39:53.373  INFO 16636 --- [restartedMain] c.a.a.o.AuOnboardingBackendApplication   : Starting AuOnboardingBackendApplication on DESKTOP-H6Q22V6 with PID 16636 (C:\Users\Pankti\eclipse-workspace\AU-Onboarding-Backend\target\classes started by Pankti in C:\Users\Pankti\eclipse-workspace\AU-Onboarding-Backend)
+2020-06-05 21:39:53.398  INFO 16636 --- [restartedMain] c.a.a.o.AuOnboardingBackendApplication   : No active profile set, falling back to default profiles: default
+2020-06-05 21:39:53.692  INFO 16636 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-06-05 21:39:53.694  INFO 16636 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-06-05 21:39:58.601  INFO 16636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-05 21:39:58.723  INFO 16636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 105ms. Found 4 JPA repository interfaces.
+2020-06-05 21:39:59.977  INFO 16636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-05 21:39:59.991  INFO 16636 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-05 21:39:59.992  INFO 16636 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-06-05 21:40:00.247  INFO 16636 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-05 21:40:00.248  INFO 16636 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6553 ms
+2020-06-05 21:40:01.241  INFO 16636 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-05 21:40:01.374  INFO 16636 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-05 21:40:01.547  INFO 16636 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-06-05 21:40:01.787  WARN 16636 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-05 21:40:02.326  INFO 16636 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-05 21:40:03.373  INFO 16636 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-05 21:40:03.732  WARN 16636 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-06-05 21:40:03.733  WARN 16636 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2020-06-05 21:40:03.733  WARN 16636 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-06-05 21:40:07.646  INFO 16636 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-05 21:40:07.759  INFO 16636 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-06-05 21:40:11.939  INFO 16636 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-05 21:40:11.995  INFO 16636 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-05 21:40:12.536  INFO 16636 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-06-05 21:40:14.276  INFO 16636 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: d5c7256b-93ec-4b85-8bcc-9bf8ba2ee585
+
+2020-06-05 21:40:15.167  INFO 16636 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3aa52648, org.springframework.security.web.context.SecurityContextPersistenceFilter@38690c7b, org.springframework.security.web.header.HeaderWriterFilter@313e74d1, org.springframework.security.web.authentication.logout.LogoutFilter@3890dc67, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7bbce20e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@605ffa20, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@45d0661e, org.springframework.security.web.session.SessionManagementFilter@538ba31f, org.springframework.security.web.access.ExceptionTranslationFilter@53183a43]
+2020-06-05 21:40:15.379  INFO 16636 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-05 21:40:15.380  INFO 16636 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-05 21:40:15.556  INFO 16636 --- [RMI TCP Connection(3)-127.0.0.1] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-06-05 21:40:15.668  INFO 16636 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 286 ms
+2020-06-05 21:40:16.385  INFO 16636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-05 21:40:16.393  INFO 16636 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-06-05 21:40:16.775  INFO 16636 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-06-05 21:40:16.780  INFO 16636 --- [restartedMain] c.a.a.o.AuOnboardingBackendApplication   : Started AuOnboardingBackendApplication in 27.528 seconds (JVM running for 35.771)
+2020-06-05 21:40:16.795  INFO 16636 --- [restartedMain] c.a.a.o.AuOnboardingBackendApplication   : Application started
+2020-06-05 21:40:36.990  INFO 16636 --- [http-nio-8080-exec-1] c.a.a.o.controllers.UserController       : Post request received to verify user login
+2020-06-05 21:40:36.991  INFO 16636 --- [http-nio-8080-exec-1] c.a.au.onboarding.services.UserService   : User service call to verfiy user credentials for login
+2020-06-05 21:40:40.417  INFO 16636 --- [http-nio-8080-exec-2] c.a.a.o.controllers.OnboardeeController  : Get request received for all onboardees
+2020-06-05 21:40:40.418  INFO 16636 --- [http-nio-8080-exec-2] c.a.a.o.services.OnboardeeService        : Onboardee service call to get all onboardees
+2020-06-05 21:40:48.418  INFO 16636 --- [http-nio-8080-exec-4] c.a.a.o.controllers.DemandController     : Get request received for all demands
+2020-06-05 21:40:48.418  INFO 16636 --- [http-nio-8080-exec-4] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 21:40:48.419  INFO 16636 --- [http-nio-8080-exec-3] c.a.a.o.controllers.OnboardeeController  : Get request received for onboardee with id: 238
+2020-06-05 21:40:48.419  INFO 16636 --- [http-nio-8080-exec-3] c.a.a.o.services.OnboardeeService        : Onboardee service call to get onboardee with id: 238
+2020-06-05 21:41:11.910  INFO 16636 --- [http-nio-8080-exec-6] c.a.a.o.controllers.OnboardeeController  : Put request received to update onoardee with id: 238
+2020-06-05 21:41:11.911  INFO 16636 --- [http-nio-8080-exec-6] c.a.a.o.services.OnboardeeService        : Onboardee service call to update onboardee with id: 238
+2020-06-05 21:41:14.431  INFO 16636 --- [http-nio-8080-exec-8] c.a.a.o.controllers.UserController       : Post request received to add user-specific logs
+2020-06-05 21:41:14.431  INFO 16636 --- [http-nio-8080-exec-8] c.a.au.onboarding.services.UserService   : User service call to get logs of a particular user
+2020-06-05 21:41:14.533  INFO 16636 --- [http-nio-8080-exec-9] c.a.a.o.controllers.OnboardeeController  : Get request received for all onboardees
+2020-06-05 21:41:14.533  INFO 16636 --- [http-nio-8080-exec-9] c.a.a.o.services.OnboardeeService        : Onboardee service call to get all onboardees
+2020-06-05 22:00:31.386  INFO 16636 --- [http-nio-8080-exec-2] c.a.a.o.controllers.OnboardeeController  : Get request received for all onboardees
+2020-06-05 22:00:31.753  INFO 16636 --- [http-nio-8080-exec-2] c.a.a.o.services.OnboardeeService        : Onboardee service call to get all onboardees
+2020-06-05 22:02:53.983  INFO 16636 --- [http-nio-8080-exec-4] c.a.a.o.controllers.OnboardeeController  : Get request received for all onboardees
+2020-06-05 22:02:53.984  INFO 16636 --- [http-nio-8080-exec-4] c.a.a.o.services.OnboardeeService        : Onboardee service call to get all onboardees
+2020-06-05 22:03:18.371  INFO 16636 --- [http-nio-8080-exec-7] c.a.a.o.controllers.DemandController     : Get request received for all demands
+2020-06-05 22:03:18.376  INFO 16636 --- [http-nio-8080-exec-6] c.a.a.o.controllers.OnboardeeController  : Get request received for onboardee with id: 26
+2020-06-05 22:03:18.376  INFO 16636 --- [http-nio-8080-exec-7] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 22:03:18.377  INFO 16636 --- [http-nio-8080-exec-6] c.a.a.o.services.OnboardeeService        : Onboardee service call to get onboardee with id: 26
+2020-06-05 22:03:41.279  INFO 16636 --- [http-nio-8080-exec-10] c.a.a.o.controllers.DemandController     : Get request received for all demands
+2020-06-05 22:03:41.280  INFO 16636 --- [http-nio-8080-exec-10] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 22:03:42.152  WARN 16636 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2020-06-05 22:04:16.584  INFO 16636 --- [http-nio-8080-exec-3] c.a.a.o.controllers.OnboardeeController  : Get request received for all onboardees
+2020-06-05 22:04:16.585  INFO 16636 --- [http-nio-8080-exec-3] c.a.a.o.services.OnboardeeService        : Onboardee service call to get all onboardees
+2020-06-05 22:04:59.952  INFO 16636 --- [http-nio-8080-exec-4] c.a.a.o.controllers.OnboardeeController  : Get request received for onboardee with id: 70
+2020-06-05 22:04:59.953  INFO 16636 --- [http-nio-8080-exec-4] c.a.a.o.services.OnboardeeService        : Onboardee service call to get onboardee with id: 70
+2020-06-05 22:05:00.001  INFO 16636 --- [http-nio-8080-exec-5] c.a.a.o.controllers.DemandController     : Get request received for all demands
+2020-06-05 22:05:00.002  INFO 16636 --- [http-nio-8080-exec-5] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 22:05:29.558  INFO 16636 --- [http-nio-8080-exec-6] c.a.a.o.controllers.OnboardeeController  : Get request received for all onboardees
+2020-06-05 22:05:29.559  INFO 16636 --- [http-nio-8080-exec-6] c.a.a.o.services.OnboardeeService        : Onboardee service call to get all onboardees
+2020-06-05 22:05:31.825  INFO 16636 --- [http-nio-8080-exec-7] c.a.a.o.controllers.DemandController     : Get request received for all demands
+2020-06-05 22:05:31.826  INFO 16636 --- [http-nio-8080-exec-7] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 22:06:16.884  INFO 16636 --- [http-nio-8080-exec-9] c.a.a.o.controllers.DemandController     : Get request received for all demands
+2020-06-05 22:06:16.885  INFO 16636 --- [http-nio-8080-exec-9] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 22:06:22.443  INFO 16636 --- [http-nio-8080-exec-10] c.a.a.o.controllers.OnboardeeController  : Get request received for all onboardees
+2020-06-05 22:06:22.446  INFO 16636 --- [http-nio-8080-exec-10] c.a.a.o.services.OnboardeeService        : Onboardee service call to get all onboardees
+2020-06-05 22:06:26.634  INFO 16636 --- [http-nio-8080-exec-1] c.a.a.o.controllers.OnboardeeController  : Get request received for onboardee with id: 70
+2020-06-05 22:06:26.634  INFO 16636 --- [http-nio-8080-exec-1] c.a.a.o.services.OnboardeeService        : Onboardee service call to get onboardee with id: 70
+2020-06-05 22:06:26.645  INFO 16636 --- [http-nio-8080-exec-2] c.a.a.o.controllers.DemandController     : Get request received for all demands
+2020-06-05 22:06:26.645  INFO 16636 --- [http-nio-8080-exec-2] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 22:13:35.958  WARN 16636 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2020-06-05 22:13:36.051  INFO 16636 --- [http-nio-8080-exec-6] c.a.a.o.controllers.DemandController     : Get request received for all demands
+2020-06-05 22:13:36.051  INFO 16636 --- [http-nio-8080-exec-6] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 22:14:30.563  INFO 16636 --- [http-nio-8080-exec-9] c.a.a.o.controllers.DemandController     : Get request received for all demands
+2020-06-05 22:14:30.563  INFO 16636 --- [http-nio-8080-exec-9] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 22:14:30.573  WARN 16636 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2020-06-05 22:14:45.982  WARN 16636 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2020-06-05 22:14:46.052  INFO 16636 --- [http-nio-8080-exec-2] c.a.a.o.controllers.DemandController     : Get request received for all demands
+2020-06-05 22:14:46.052  INFO 16636 --- [http-nio-8080-exec-2] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 22:14:57.771  WARN 16636 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2020-06-05 22:14:57.781  INFO 16636 --- [http-nio-8080-exec-5] c.a.a.o.controllers.DemandController     : Get request received for all demands
+2020-06-05 22:14:57.782  INFO 16636 --- [http-nio-8080-exec-5] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 22:18:26.546  INFO 16636 --- [http-nio-8080-exec-8] c.a.a.o.controllers.DemandController     : Get request received for all demands
+2020-06-05 22:18:26.635  INFO 16636 --- [http-nio-8080-exec-8] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 22:18:26.750  WARN 16636 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2020-06-05 22:19:09.950  INFO 16636 --- [http-nio-8080-exec-1] c.a.a.o.controllers.DemandController     : Get request received for all demands
+2020-06-05 22:19:09.951  INFO 16636 --- [http-nio-8080-exec-1] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 22:19:10.001  WARN 16636 --- [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2020-06-05 22:19:24.567  INFO 16636 --- [http-nio-8080-exec-2] c.a.a.o.controllers.OnboardeeController  : Get request received for all onboardees
+2020-06-05 22:19:24.568  INFO 16636 --- [http-nio-8080-exec-2] c.a.a.o.services.OnboardeeService        : Onboardee service call to get all onboardees
+2020-06-05 22:20:06.005  INFO 16636 --- [http-nio-8080-exec-4] c.a.a.o.controllers.DemandController     : Get request received for all demands
+2020-06-05 22:20:06.006  INFO 16636 --- [http-nio-8080-exec-4] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 22:21:41.598  INFO 16636 --- [http-nio-8080-exec-6] c.a.a.o.controllers.DemandController     : Get request received for all demands
+2020-06-05 22:21:41.599  INFO 16636 --- [http-nio-8080-exec-6] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 22:22:06.274  INFO 16636 --- [http-nio-8080-exec-7] c.a.a.o.controllers.DemandController     : Get request received for all demands
+2020-06-05 22:22:06.274  INFO 16636 --- [http-nio-8080-exec-7] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 22:22:46.265  INFO 16636 --- [http-nio-8080-exec-8] c.a.a.o.controllers.OnboardeeController  : Get request received for all onboardees
+2020-06-05 22:22:46.266  INFO 16636 --- [http-nio-8080-exec-8] c.a.a.o.services.OnboardeeService        : Onboardee service call to get all onboardees
+2020-06-05 22:22:53.741  INFO 16636 --- [http-nio-8080-exec-9] c.a.a.o.controllers.OnboardeeController  : Get request received for onboardee with id: 70
+2020-06-05 22:22:53.742  INFO 16636 --- [http-nio-8080-exec-9] c.a.a.o.services.OnboardeeService        : Onboardee service call to get onboardee with id: 70
+2020-06-05 22:22:53.772  INFO 16636 --- [http-nio-8080-exec-10] c.a.a.o.controllers.DemandController     : Get request received for all demands
+2020-06-05 22:22:53.773  INFO 16636 --- [http-nio-8080-exec-10] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 22:23:03.722  INFO 16636 --- [http-nio-8080-exec-1] c.a.a.o.controllers.OnboardeeController  : Get request received for all onboardees
+2020-06-05 22:23:03.759  INFO 16636 --- [http-nio-8080-exec-1] c.a.a.o.services.OnboardeeService        : Onboardee service call to get all onboardees
+2020-06-05 22:23:06.254  INFO 16636 --- [http-nio-8080-exec-2] c.a.a.o.controllers.OnboardeeController  : Get request received for onboardee with id: 70
+2020-06-05 22:23:06.262  INFO 16636 --- [http-nio-8080-exec-2] c.a.a.o.services.OnboardeeService        : Onboardee service call to get onboardee with id: 70
+2020-06-05 22:23:06.261  INFO 16636 --- [http-nio-8080-exec-3] c.a.a.o.controllers.DemandController     : Get request received for all demands
+2020-06-05 22:23:06.268  INFO 16636 --- [http-nio-8080-exec-3] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 22:23:41.416  WARN 16636 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2020-06-05 22:23:41.438  INFO 16636 --- [http-nio-8080-exec-5] c.a.a.o.controllers.DemandController     : Get request received for all demands
+2020-06-05 22:23:41.439  INFO 16636 --- [http-nio-8080-exec-5] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 22:23:43.578  INFO 16636 --- [http-nio-8080-exec-6] c.a.a.o.controllers.OnboardeeController  : Get request received for all onboardees
+2020-06-05 22:23:43.578  INFO 16636 --- [http-nio-8080-exec-6] c.a.a.o.services.OnboardeeService        : Onboardee service call to get all onboardees
+2020-06-05 22:23:46.726  INFO 16636 --- [http-nio-8080-exec-8] c.a.a.o.controllers.DemandController     : Get request received for all demands
+2020-06-05 22:23:46.726  INFO 16636 --- [http-nio-8080-exec-7] c.a.a.o.controllers.OnboardeeController  : Get request received for onboardee with id: 70
+2020-06-05 22:23:46.726  INFO 16636 --- [http-nio-8080-exec-8] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 22:23:46.726  INFO 16636 --- [http-nio-8080-exec-7] c.a.a.o.services.OnboardeeService        : Onboardee service call to get onboardee with id: 70
+2020-06-05 22:24:16.708  INFO 16636 --- [http-nio-8080-exec-10] c.a.a.o.controllers.DemandController     : Get request received for all demands
+2020-06-05 22:24:16.709  WARN 16636 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2020-06-05 22:24:16.709  INFO 16636 --- [http-nio-8080-exec-10] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 22:24:24.744  INFO 16636 --- [http-nio-8080-exec-1] c.a.a.o.controllers.OnboardeeController  : Get request received for all onboardees
+2020-06-05 22:24:24.744  INFO 16636 --- [http-nio-8080-exec-1] c.a.a.o.services.OnboardeeService        : Onboardee service call to get all onboardees
+2020-06-05 22:24:30.622  INFO 16636 --- [http-nio-8080-exec-3] c.a.a.o.controllers.OnboardeeController  : Get request received for onboardee with id: 124
+2020-06-05 22:24:30.623  INFO 16636 --- [http-nio-8080-exec-3] c.a.a.o.services.OnboardeeService        : Onboardee service call to get onboardee with id: 124
+2020-06-05 22:24:30.628  INFO 16636 --- [http-nio-8080-exec-2] c.a.a.o.controllers.DemandController     : Get request received for all demands
+2020-06-05 22:24:30.629  INFO 16636 --- [http-nio-8080-exec-2] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 22:25:01.043  INFO 16636 --- [http-nio-8080-exec-5] c.a.a.o.controllers.DemandController     : Get request received for all demands
+2020-06-05 22:25:01.044  INFO 16636 --- [http-nio-8080-exec-5] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 22:25:01.044  WARN 16636 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2020-06-05 22:25:02.619  INFO 16636 --- [http-nio-8080-exec-6] c.a.a.o.controllers.OnboardeeController  : Get request received for all onboardees
+2020-06-05 22:25:02.619  INFO 16636 --- [http-nio-8080-exec-6] c.a.a.o.services.OnboardeeService        : Onboardee service call to get all onboardees
+2020-06-05 22:25:04.713  INFO 16636 --- [http-nio-8080-exec-7] c.a.a.o.controllers.OnboardeeController  : Get request received for onboardee with id: 124
+2020-06-05 22:25:04.714  INFO 16636 --- [http-nio-8080-exec-7] c.a.a.o.services.OnboardeeService        : Onboardee service call to get onboardee with id: 124
+2020-06-05 22:25:04.733  INFO 16636 --- [http-nio-8080-exec-8] c.a.a.o.controllers.DemandController     : Get request received for all demands
+2020-06-05 22:25:04.733  INFO 16636 --- [http-nio-8080-exec-8] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 22:25:49.166  WARN 16636 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2020-06-05 22:25:49.237  INFO 16636 --- [http-nio-8080-exec-10] c.a.a.o.controllers.DemandController     : Get request received for all demands
+2020-06-05 22:25:49.237  INFO 16636 --- [http-nio-8080-exec-10] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 22:25:51.095  INFO 16636 --- [http-nio-8080-exec-1] c.a.a.o.controllers.OnboardeeController  : Get request received for all onboardees
+2020-06-05 22:25:51.095  INFO 16636 --- [http-nio-8080-exec-1] c.a.a.o.services.OnboardeeService        : Onboardee service call to get all onboardees
+2020-06-05 22:25:53.718  INFO 16636 --- [http-nio-8080-exec-3] c.a.a.o.controllers.OnboardeeController  : Get request received for onboardee with id: 26
+2020-06-05 22:25:53.719  INFO 16636 --- [http-nio-8080-exec-3] c.a.a.o.services.OnboardeeService        : Onboardee service call to get onboardee with id: 26
+2020-06-05 22:25:53.726  INFO 16636 --- [http-nio-8080-exec-2] c.a.a.o.controllers.DemandController     : Get request received for all demands
+2020-06-05 22:25:53.727  INFO 16636 --- [http-nio-8080-exec-2] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 22:25:55.451  INFO 16636 --- [http-nio-8080-exec-4] c.a.a.o.controllers.OnboardeeController  : Get request received for all onboardees
+2020-06-05 22:25:55.470  INFO 16636 --- [http-nio-8080-exec-4] c.a.a.o.services.OnboardeeService        : Onboardee service call to get all onboardees
+2020-06-05 22:25:57.173  INFO 16636 --- [http-nio-8080-exec-5] c.a.a.o.controllers.DemandController     : Get request received for all demands
+2020-06-05 22:25:57.173  INFO 16636 --- [http-nio-8080-exec-5] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 22:27:49.871  INFO 16636 --- [http-nio-8080-exec-9] c.a.a.o.controllers.OnboardeeController  : Post request received to save a new onboardee
+2020-06-05 22:27:49.872  INFO 16636 --- [http-nio-8080-exec-9] c.a.a.o.services.OnboardeeService        : Onboardee service call to save new onboardee
+2020-06-05 22:27:54.134  INFO 16636 --- [http-nio-8080-exec-1] c.a.a.o.controllers.UserController       : Post request received to add user-specific logs
+2020-06-05 22:27:54.209  INFO 16636 --- [http-nio-8080-exec-1] c.a.au.onboarding.services.UserService   : User service call to get logs of a particular user
+2020-06-05 22:27:54.209  INFO 16636 --- [http-nio-8080-exec-3] c.a.a.o.controllers.OnboardeeController  : Get request received for all onboardees
+2020-06-05 22:27:54.210  INFO 16636 --- [http-nio-8080-exec-3] c.a.a.o.services.OnboardeeService        : Onboardee service call to get all onboardees
+2020-06-05 22:28:28.254  INFO 16636 --- [http-nio-8080-exec-2] c.a.a.o.controllers.DemandController     : Get request received for all demands
+2020-06-05 22:28:28.255  INFO 16636 --- [http-nio-8080-exec-2] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 22:30:01.700  WARN 16636 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field name; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Unexpected character ('}' (code 125)): was expecting double-quote to start field name
+ at [Source: (PushbackInputStream); line: 9, column: 6] (through reference chain: com.accolite.au.onboarding.models.Demand["dmdSkills"]->java.util.ArrayList[0])]
+2020-06-05 22:30:10.448  INFO 16636 --- [http-nio-8080-exec-8] c.a.a.o.controllers.DemandController     : Post request received to save a new demand
+2020-06-05 22:30:10.449  INFO 16636 --- [http-nio-8080-exec-8] c.a.a.onboarding.services.DemandService  : Demand service call to save new demand
+2020-06-05 22:30:13.047  WARN 16636 --- [http-nio-8080-exec-8] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1364, SQLState: HY000
+2020-06-05 22:30:13.081 ERROR 16636 --- [http-nio-8080-exec-8] o.h.engine.jdbc.spi.SqlExceptionHelper   : Field 'is_mapped' doesn't have a default value
+2020-06-05 22:30:17.114 ERROR 16636 --- [http-nio-8080-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.orm.jpa.JpaSystemException: could not execute statement; nested exception is org.hibernate.exception.GenericJDBCException: could not execute statement] with root cause
+
+java.sql.SQLException: Field 'is_mapped' doesn't have a default value
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1092) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1040) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1347) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1025) ~[mysql-connector-java-8.0.20.jar:8.0.20]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-3.4.5.jar:na]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3235) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3760) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:107) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:604) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.engine.spi.ActionQueue.lambda$executeActions$1(ActionQueue.java:478) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684) ~[na:1.8.0_151]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:475) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:348) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:102) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1352) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:443) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3202) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2370) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:447) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:183) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:40) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:281) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101) ~[hibernate-core-5.4.15.Final.jar:5.4.15.Final]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:534) ~[spring-orm-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:743) ~[spring-tx-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711) ~[spring-tx-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:631) ~[spring-tx-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:385) ~[spring-tx-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118) ~[spring-tx-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139) ~[spring-tx-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:178) ~[spring-data-jpa-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95) ~[spring-aop-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at com.sun.proxy.$Proxy159.save(Unknown Source) ~[na:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_151]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:205) ~[spring-aop-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at com.sun.proxy.$Proxy117.save(Unknown Source) ~[na:na]
+	at com.accolite.au.onboarding.services.DemandService.saveDemand(DemandService.java:42) ~[classes/:na]
+	at com.accolite.au.onboarding.controllers.DemandController.saveDemand(DemandController.java:55) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_151]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_151]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_151]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_151]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) ~[spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118) ~[spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158) ~[spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) ~[spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) ~[spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.3.2.RELEASE.jar:5.3.2.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93) ~[spring-boot-actuator-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_151]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.35.jar:9.0.35]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+
+2020-06-05 22:32:32.554  INFO 16636 --- [Thread-372] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-05 22:32:33.191  INFO 16636 --- [Thread-372] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-05 22:32:33.375  INFO 16636 --- [Thread-372] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-06-05 22:32:38.691  INFO 16636 --- [Thread-372] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-06-05 22:32:43.316  INFO 16636 --- [restartedMain] c.a.a.o.AuOnboardingBackendApplication   : Starting AuOnboardingBackendApplication on DESKTOP-H6Q22V6 with PID 16636 (C:\Users\Pankti\eclipse-workspace\AU-Onboarding-Backend\target\classes started by Pankti in C:\Users\Pankti\eclipse-workspace\AU-Onboarding-Backend)
+2020-06-05 22:32:43.317  INFO 16636 --- [restartedMain] c.a.a.o.AuOnboardingBackendApplication   : No active profile set, falling back to default profiles: default
+2020-06-05 22:32:59.624  INFO 16636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-05 22:32:59.693  INFO 16636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68ms. Found 4 JPA repository interfaces.
+2020-06-05 22:33:05.006  INFO 16636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-05 22:33:05.010  INFO 16636 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-05 22:33:05.012  INFO 16636 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-06-05 22:33:05.077  INFO 16636 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-05 22:33:05.078  INFO 16636 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 21753 ms
+2020-06-05 22:33:05.544  INFO 16636 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-05 22:33:05.605  INFO 16636 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-05 22:33:05.680  INFO 16636 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-06-05 22:33:05.892  WARN 16636 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-05 22:33:05.896  INFO 16636 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-06-05 22:33:05.897  INFO 16636 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-06-05 22:33:06.439  WARN 16636 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-06-05 22:33:06.440  WARN 16636 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2020-06-05 22:33:06.442  WARN 16636 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-06-05 22:33:08.966  INFO 16636 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-05 22:33:08.967  INFO 16636 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-05 22:33:09.166  INFO 16636 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-06-05 22:33:09.999  INFO 16636 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 65c50019-326b-472c-b9eb-15115eef37ab
+
+2020-06-05 22:33:10.031  INFO 16636 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3321f4e0, org.springframework.security.web.context.SecurityContextPersistenceFilter@43383776, org.springframework.security.web.header.HeaderWriterFilter@13866be3, org.springframework.security.web.authentication.logout.LogoutFilter@b8c36a9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@29a236fe, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@9db895a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@66653a87, org.springframework.security.web.session.SessionManagementFilter@4ef9d5e5, org.springframework.security.web.access.ExceptionTranslationFilter@2c38d906]
+2020-06-05 22:33:10.135  INFO 16636 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-06-05 22:33:10.186  INFO 16636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-05 22:33:10.336  INFO 16636 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-06-05 22:33:10.783  INFO 16636 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-06-05 22:33:10.881  INFO 16636 --- [restartedMain] c.a.a.o.AuOnboardingBackendApplication   : Started AuOnboardingBackendApplication in 28.451 seconds (JVM running for 3209.871)
+2020-06-05 22:33:10.895  INFO 16636 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-06-05 22:33:10.896  INFO 16636 --- [restartedMain] c.a.a.o.AuOnboardingBackendApplication   : Application started
+2020-06-05 22:33:44.500  INFO 16636 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-05 22:33:44.501  INFO 16636 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-05 22:33:44.511  INFO 16636 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2020-06-05 22:33:44.523  INFO 16636 --- [http-nio-8080-exec-1] c.a.a.o.controllers.OnboardeeController  : Get request received for all onboardees
+2020-06-05 22:33:44.524  INFO 16636 --- [http-nio-8080-exec-1] c.a.a.o.services.OnboardeeService        : Onboardee service call to get all onboardees
+2020-06-05 22:33:58.057  INFO 16636 --- [http-nio-8080-exec-4] c.a.a.o.controllers.DemandController     : Post request received to save a new demand
+2020-06-05 22:33:58.058  INFO 16636 --- [http-nio-8080-exec-4] c.a.a.onboarding.services.DemandService  : Demand service call to save new demand
+2020-06-05 22:34:05.120  INFO 16636 --- [http-nio-8080-exec-8] c.a.a.o.controllers.DemandController     : Get request received for all demands
+2020-06-05 22:34:05.121  INFO 16636 --- [http-nio-8080-exec-8] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 22:34:05.133  INFO 16636 --- [http-nio-8080-exec-6] c.a.a.o.controllers.OnboardeeController  : Get request received for onboardee with id: 455
+2020-06-05 22:34:05.134  INFO 16636 --- [http-nio-8080-exec-6] c.a.a.o.services.OnboardeeService        : Onboardee service call to get onboardee with id: 455
+2020-06-05 22:34:49.469  WARN 16636 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2020-06-05 22:34:49.492  INFO 16636 --- [http-nio-8080-exec-5] c.a.a.o.controllers.DemandController     : Get request received for all demands
+2020-06-05 22:34:49.493  INFO 16636 --- [http-nio-8080-exec-5] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 22:34:51.382  INFO 16636 --- [http-nio-8080-exec-3] c.a.a.o.controllers.OnboardeeController  : Get request received for all onboardees
+2020-06-05 22:34:51.383  INFO 16636 --- [http-nio-8080-exec-3] c.a.a.o.services.OnboardeeService        : Onboardee service call to get all onboardees
+2020-06-05 22:34:53.961  INFO 16636 --- [http-nio-8080-exec-9] c.a.a.o.controllers.OnboardeeController  : Get request received for onboardee with id: 455
+2020-06-05 22:34:53.961  INFO 16636 --- [http-nio-8080-exec-9] c.a.a.o.services.OnboardeeService        : Onboardee service call to get onboardee with id: 455
+2020-06-05 22:34:53.965  INFO 16636 --- [http-nio-8080-exec-7] c.a.a.o.controllers.DemandController     : Get request received for all demands
+2020-06-05 22:34:53.965  INFO 16636 --- [http-nio-8080-exec-7] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 22:35:20.731  WARN 16636 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2020-06-05 22:35:20.736  INFO 16636 --- [http-nio-8080-exec-4] c.a.a.o.controllers.DemandController     : Get request received for all demands
+2020-06-05 22:35:20.737  INFO 16636 --- [http-nio-8080-exec-4] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 22:35:22.702  INFO 16636 --- [http-nio-8080-exec-8] c.a.a.o.controllers.OnboardeeController  : Get request received for all onboardees
+2020-06-05 22:35:22.702  INFO 16636 --- [http-nio-8080-exec-8] c.a.a.o.services.OnboardeeService        : Onboardee service call to get all onboardees
+2020-06-05 22:35:26.125  INFO 16636 --- [http-nio-8080-exec-2] c.a.a.o.controllers.DemandController     : Get request received for all demands
+2020-06-05 22:35:26.125  INFO 16636 --- [http-nio-8080-exec-2] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 22:35:26.120  INFO 16636 --- [http-nio-8080-exec-6] c.a.a.o.controllers.OnboardeeController  : Get request received for onboardee with id: 455
+2020-06-05 22:35:26.128  INFO 16636 --- [http-nio-8080-exec-6] c.a.a.o.services.OnboardeeService        : Onboardee service call to get onboardee with id: 455
+2020-06-05 22:36:12.836  INFO 16636 --- [http-nio-8080-exec-3] c.a.a.o.controllers.DemandController     : Get request received for all demands
+2020-06-05 22:36:12.837  INFO 16636 --- [http-nio-8080-exec-3] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 22:36:12.917  WARN 16636 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2020-06-05 22:36:40.104  INFO 16636 --- [http-nio-8080-exec-7] c.a.a.o.controllers.DemandController     : Get request received for all demands
+2020-06-05 22:36:40.106  INFO 16636 --- [http-nio-8080-exec-7] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 22:36:40.813  WARN 16636 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2020-06-05 22:36:58.526  INFO 16636 --- [http-nio-8080-exec-1] c.a.a.o.controllers.DemandController     : Get request received for all demands
+2020-06-05 22:36:58.526  INFO 16636 --- [http-nio-8080-exec-1] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 22:36:58.671  WARN 16636 --- [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2020-06-05 22:37:26.240  INFO 16636 --- [http-nio-8080-exec-8] c.a.a.o.controllers.UserController       : Post request received to verify user login
+2020-06-05 22:37:26.242  INFO 16636 --- [http-nio-8080-exec-8] c.a.au.onboarding.services.UserService   : User service call to verfiy user credentials for login
+2020-06-05 22:37:26.498  INFO 16636 --- [http-nio-8080-exec-6] c.a.a.o.controllers.OnboardeeController  : Get request received for all onboardees
+2020-06-05 22:37:26.498  INFO 16636 --- [http-nio-8080-exec-6] c.a.a.o.services.OnboardeeService        : Onboardee service call to get all onboardees
+2020-06-05 22:37:39.502  INFO 16636 --- [http-nio-8080-exec-2] c.a.a.o.controllers.UserController       : Post request received to verify user login
+2020-06-05 22:37:39.503  INFO 16636 --- [http-nio-8080-exec-2] c.a.au.onboarding.services.UserService   : User service call to verfiy user credentials for login
+2020-06-05 22:37:39.506  WARN 16636 --- [http-nio-8080-exec-2] c.a.au.onboarding.services.UserService   : Invalid user credentials
+2020-06-05 22:37:39.506 ERROR 16636 --- [http-nio-8080-exec-2] c.a.a.o.controllers.UserController       : Exception occurred at path /login: The credentials provided are invalid
+2020-06-05 22:37:46.762  INFO 16636 --- [http-nio-8080-exec-5] c.a.a.o.controllers.UserController       : Post request received to verify user login
+2020-06-05 22:37:46.763  INFO 16636 --- [http-nio-8080-exec-5] c.a.au.onboarding.services.UserService   : User service call to verfiy user credentials for login
+2020-06-05 22:37:46.936  INFO 16636 --- [http-nio-8080-exec-3] c.a.a.o.controllers.OnboardeeController  : Get request received for all onboardees
+2020-06-05 22:37:46.936  INFO 16636 --- [http-nio-8080-exec-3] c.a.a.o.services.OnboardeeService        : Onboardee service call to get all onboardees
+2020-06-05 22:37:54.323  INFO 16636 --- [http-nio-8080-exec-9] c.a.a.o.controllers.OnboardeeController  : Get request received for all joining cities
+2020-06-05 22:37:54.324  INFO 16636 --- [http-nio-8080-exec-9] c.a.a.o.services.OnboardeeService        : Onboardee service call to get joining cities data
+2020-06-05 22:37:54.329  INFO 16636 --- [http-nio-8080-exec-7] c.a.a.o.controllers.DemandController     : Get request received for skills of all demands
+2020-06-05 22:37:54.329  INFO 16636 --- [http-nio-8080-exec-7] c.a.a.onboarding.services.DemandService  : Demand service call to get skills of all demands
+2020-06-05 22:37:54.335  INFO 16636 --- [http-nio-8080-exec-7] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 22:37:54.389  INFO 16636 --- [http-nio-8080-exec-10] c.a.a.o.controllers.OnboardeeController  : Get request received to get skills of all selected candidates
+2020-06-05 22:37:54.389  INFO 16636 --- [http-nio-8080-exec-10] c.a.a.o.services.OnboardeeService        : Onboardee service call to get skills of selected candidates
+2020-06-05 22:37:54.389  INFO 16636 --- [http-nio-8080-exec-10] c.a.a.o.services.OnboardeeService        : Onboardee service call to get all onboardees
+2020-06-05 22:38:18.479  INFO 16636 --- [http-nio-8080-exec-4] c.a.a.o.controllers.DemandController     : Get request received for skills of all demands
+2020-06-05 22:38:18.479  INFO 16636 --- [http-nio-8080-exec-1] c.a.a.o.controllers.OnboardeeController  : Get request received for all joining cities
+2020-06-05 22:38:18.480  INFO 16636 --- [http-nio-8080-exec-4] c.a.a.onboarding.services.DemandService  : Demand service call to get skills of all demands
+2020-06-05 22:38:18.480  INFO 16636 --- [http-nio-8080-exec-4] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 22:38:18.480  INFO 16636 --- [http-nio-8080-exec-1] c.a.a.o.services.OnboardeeService        : Onboardee service call to get joining cities data
+2020-06-05 22:38:18.541  INFO 16636 --- [http-nio-8080-exec-8] c.a.a.o.controllers.OnboardeeController  : Get request received to get skills of all selected candidates
+2020-06-05 22:38:18.541  INFO 16636 --- [http-nio-8080-exec-8] c.a.a.o.services.OnboardeeService        : Onboardee service call to get skills of selected candidates
+2020-06-05 22:38:18.541  INFO 16636 --- [http-nio-8080-exec-8] c.a.a.o.services.OnboardeeService        : Onboardee service call to get all onboardees
+2020-06-05 22:38:42.502  INFO 16636 --- [http-nio-8080-exec-6] c.a.a.o.controllers.UserController       : Post request received to verify user login
+2020-06-05 22:38:42.503  INFO 16636 --- [http-nio-8080-exec-6] c.a.au.onboarding.services.UserService   : User service call to verfiy user credentials for login
+2020-06-05 22:38:42.704  INFO 16636 --- [http-nio-8080-exec-2] c.a.a.o.controllers.OnboardeeController  : Get request received for all onboardees
+2020-06-05 22:38:42.704  INFO 16636 --- [http-nio-8080-exec-2] c.a.a.o.services.OnboardeeService        : Onboardee service call to get all onboardees
+2020-06-05 22:38:45.898  INFO 16636 --- [http-nio-8080-exec-5] c.a.a.o.controllers.OnboardeeController  : Get request received for onboardee with id: 455
+2020-06-05 22:38:45.899  INFO 16636 --- [http-nio-8080-exec-5] c.a.a.o.services.OnboardeeService        : Onboardee service call to get onboardee with id: 455
+2020-06-05 22:38:45.912  INFO 16636 --- [http-nio-8080-exec-3] c.a.a.o.controllers.DemandController     : Get request received for all demands
+2020-06-05 22:38:45.912  INFO 16636 --- [http-nio-8080-exec-3] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 22:39:13.723  INFO 16636 --- [http-nio-8080-exec-10] c.a.a.o.controllers.UserController       : Post request received to check access-level of user
+2020-06-05 22:39:13.724  INFO 16636 --- [http-nio-8080-exec-10] c.a.au.onboarding.services.UserService   : User service call to check access level of a user
+2020-06-05 22:39:13.734  WARN 16636 --- [http-nio-8080-exec-10] c.a.au.onboarding.services.UserService   : The requested entity does not exist
+2020-06-05 22:39:13.736 ERROR 16636 --- [http-nio-8080-exec-10] c.a.a.o.controllers.UserController       : Exception occurred at path /check: The requested entity instance does not exist
+2020-06-05 22:39:13.748  INFO 16636 --- [http-nio-8080-exec-9] c.a.a.o.controllers.OnboardeeController  : Get request received for all onboardees
+2020-06-05 22:39:13.748  INFO 16636 --- [http-nio-8080-exec-9] c.a.a.o.services.OnboardeeService        : Onboardee service call to get all onboardees
+2020-06-05 22:40:09.641  INFO 16636 --- [http-nio-8080-exec-8] c.a.a.o.controllers.OnboardeeController  : Get request received for all onboardees
+2020-06-05 22:40:09.641  INFO 16636 --- [http-nio-8080-exec-8] c.a.a.o.services.OnboardeeService        : Onboardee service call to get all onboardees
+2020-06-05 22:40:26.128  INFO 16636 --- [http-nio-8080-exec-6] c.a.a.o.controllers.OnboardeeController  : Get request received for all onboardees
+2020-06-05 22:40:26.129  INFO 16636 --- [http-nio-8080-exec-6] c.a.a.o.services.OnboardeeService        : Onboardee service call to get all onboardees
+2020-06-05 22:40:42.631  INFO 16636 --- [http-nio-8080-exec-2] c.a.a.o.controllers.OnboardeeController  : Get request received for all onboardees
+2020-06-05 22:40:42.631  INFO 16636 --- [http-nio-8080-exec-2] c.a.a.o.services.OnboardeeService        : Onboardee service call to get all onboardees
+2020-06-05 22:40:53.801  INFO 16636 --- [http-nio-8080-exec-3] c.a.a.o.controllers.OnboardeeController  : Get request received for all onboardees
+2020-06-05 22:40:53.801  INFO 16636 --- [http-nio-8080-exec-3] c.a.a.o.services.OnboardeeService        : Onboardee service call to get all onboardees
+2020-06-05 22:41:13.537  INFO 16636 --- [http-nio-8080-exec-7] c.a.a.o.controllers.UserController       : Post request received to verify user login
+2020-06-05 22:41:13.537  INFO 16636 --- [http-nio-8080-exec-7] c.a.au.onboarding.services.UserService   : User service call to verfiy user credentials for login
+2020-06-05 22:41:13.669  INFO 16636 --- [http-nio-8080-exec-10] c.a.a.o.controllers.OnboardeeController  : Get request received for all onboardees
+2020-06-05 22:41:13.669  INFO 16636 --- [http-nio-8080-exec-10] c.a.a.o.services.OnboardeeService        : Onboardee service call to get all onboardees
+2020-06-05 22:41:46.115  INFO 16636 --- [http-nio-8080-exec-9] c.a.a.o.controllers.OnboardeeController  : Get request received for all onboardees
+2020-06-05 22:41:46.115  INFO 16636 --- [http-nio-8080-exec-9] c.a.a.o.services.OnboardeeService        : Onboardee service call to get all onboardees
+2020-06-05 22:42:04.748  INFO 16636 --- [http-nio-8080-exec-4] c.a.a.o.controllers.OnboardeeController  : Get request received for all onboardees
+2020-06-05 22:42:04.748  INFO 16636 --- [http-nio-8080-exec-4] c.a.a.o.services.OnboardeeService        : Onboardee service call to get all onboardees
+2020-06-05 22:42:24.364  INFO 16636 --- [http-nio-8080-exec-1] c.a.a.o.controllers.OnboardeeController  : Get request received for all onboardees
+2020-06-05 22:42:24.365  INFO 16636 --- [http-nio-8080-exec-1] c.a.a.o.services.OnboardeeService        : Onboardee service call to get all onboardees
+2020-06-05 22:42:34.236  INFO 16636 --- [http-nio-8080-exec-8] c.a.a.o.controllers.OnboardeeController  : Get request received for all onboardees
+2020-06-05 22:42:34.237  INFO 16636 --- [http-nio-8080-exec-8] c.a.a.o.services.OnboardeeService        : Onboardee service call to get all onboardees
+2020-06-05 22:42:36.221  INFO 16636 --- [http-nio-8080-exec-6] c.a.a.o.controllers.DemandController     : Get request received for all demands
+2020-06-05 22:42:36.221  INFO 16636 --- [http-nio-8080-exec-6] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 22:50:06.261  INFO 16636 --- [http-nio-8080-exec-5] c.a.a.o.controllers.DemandController     : Get request received for all demands
+2020-06-05 22:50:06.261  INFO 16636 --- [http-nio-8080-exec-5] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 22:51:01.872  INFO 16636 --- [http-nio-8080-exec-7] c.a.a.o.controllers.DemandController     : Get request received for all demands
+2020-06-05 22:51:01.873  INFO 16636 --- [http-nio-8080-exec-7] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 22:51:37.233  INFO 16636 --- [http-nio-8080-exec-9] c.a.a.o.controllers.DemandController     : Get request received for all demands
+2020-06-05 22:51:37.234  INFO 16636 --- [http-nio-8080-exec-9] c.a.a.onboarding.services.DemandService  : Demand service call to get all demands
+2020-06-05 23:00:15.072  INFO 16636 --- [RMI TCP Connection(106)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-06-05 23:00:18.001  INFO 16636 --- [RMI TCP Connection(106)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-05 23:00:18.290  INFO 16636 --- [RMI TCP Connection(106)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-05 23:00:18.433  INFO 16636 --- [RMI TCP Connection(106)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2020-06-05 23:00:18.672  INFO 16636 --- [RMI TCP Connection(106)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2020-06-05 23:12:58.570  INFO 3216 --- [main] c.a.a.o.c.OnboardeeControllerTest        : Starting OnboardeeControllerTest on DESKTOP-H6Q22V6 with PID 3216 (started by Pankti in C:\Users\Pankti\eclipse-workspace\AU-Onboarding-Backend)
+2020-06-05 23:12:58.572  INFO 3216 --- [main] c.a.a.o.c.OnboardeeControllerTest        : The following profiles are active: test
+2020-06-05 23:13:04.288  WARN 3216 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaAuditingHandler': Cannot resolve reference to bean 'jpaMappingContext' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: JPA metamodel must not be empty!
+2020-06-05 23:13:04.298  INFO 3216 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-05 23:13:04.307 ERROR 3216 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaAuditingHandler': Cannot resolve reference to bean 'jpaMappingContext' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: JPA metamodel must not be empty!
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:691) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:196) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1358) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:895) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) [spring-boot-test-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) [spring-test-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) [spring-test-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123) [spring-test-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.postProcessFields(MockitoTestExecutionListener.java:95) [spring-boot-test-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.injectFields(MockitoTestExecutionListener.java:79) [spring-boot-test-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.prepareTestInstance(MockitoTestExecutionListener.java:54) [spring-boot-test-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244) [spring-test-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:98) [spring-test-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$5(ClassBasedTestDescriptor.java:341) [junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:346) [junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:341) [junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193) ~[na:1.8.0_151]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175) ~[na:1.8.0_151]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1380) ~[na:1.8.0_151]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481) ~[na:1.8.0_151]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471) ~[na:1.8.0_151]
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312) ~[na:1.8.0_151]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:743) ~[na:1.8.0_151]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:742) ~[na:1.8.0_151]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580) ~[na:1.8.0_151]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:340) [junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:263) [junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:256) [junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at java.util.Optional.orElseGet(Optional.java:267) ~[na:1.8.0_151]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:255) [junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:29) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:108) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:107) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:71) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:107) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:107) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:75) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1255) ~[na:1.8.0_151]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1255) ~[na:1.8.0_151]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:229) ~[.cp/:na]
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:197) ~[.cp/:na]
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:211) ~[.cp/:na]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:191) ~[.cp/:na]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:137) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:89) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209) ~[.cp/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: JPA metamodel must not be empty!
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	... 87 common frames omitted
+Caused by: java.lang.IllegalArgumentException: JPA metamodel must not be empty!
+	at org.springframework.util.Assert.notEmpty(Assert.java:464) ~[spring-core-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.data.jpa.mapping.JpaMetamodelMappingContext.<init>(JpaMetamodelMappingContext.java:58) ~[spring-data-jpa-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.data.jpa.repository.config.JpaMetamodelMappingContextFactoryBean.createInstance(JpaMetamodelMappingContextFactoryBean.java:80) ~[spring-data-jpa-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.data.jpa.repository.config.JpaMetamodelMappingContextFactoryBean.createInstance(JpaMetamodelMappingContextFactoryBean.java:44) ~[spring-data-jpa-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.beans.factory.config.AbstractFactoryBean.afterPropertiesSet(AbstractFactoryBean.java:142) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	... 94 common frames omitted
+
+2020-06-05 23:13:04.324 ERROR 3216 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6a370f4] to prepare test instance [com.accolite.au.onboarding.controllers.OnboardeeControllerTest@4c1bdcc2]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123) ~[spring-test-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.postProcessFields(MockitoTestExecutionListener.java:95) ~[spring-boot-test-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.injectFields(MockitoTestExecutionListener.java:79) ~[spring-boot-test-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.prepareTestInstance(MockitoTestExecutionListener.java:54) ~[spring-boot-test-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244) ~[spring-test-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:98) [spring-test-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$5(ClassBasedTestDescriptor.java:341) [junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:346) [junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:341) [junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193) ~[na:1.8.0_151]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175) ~[na:1.8.0_151]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1380) ~[na:1.8.0_151]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481) ~[na:1.8.0_151]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471) ~[na:1.8.0_151]
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312) ~[na:1.8.0_151]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:743) ~[na:1.8.0_151]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:742) ~[na:1.8.0_151]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580) ~[na:1.8.0_151]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:340) [junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:263) [junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:256) [junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at java.util.Optional.orElseGet(Optional.java:267) ~[na:1.8.0_151]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:255) [junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:29) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:108) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:107) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:71) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:107) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:107) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:75) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1255) ~[na:1.8.0_151]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1255) ~[na:1.8.0_151]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:229) ~[.cp/:na]
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:197) ~[.cp/:na]
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:211) ~[.cp/:na]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:191) ~[.cp/:na]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:137) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:89) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209) ~[.cp/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaAuditingHandler': Cannot resolve reference to bean 'jpaMappingContext' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: JPA metamodel must not be empty!
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:691) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:196) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1358) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:895) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) ~[spring-boot-test-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	... 66 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: JPA metamodel must not be empty!
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	... 87 common frames omitted
+Caused by: java.lang.IllegalArgumentException: JPA metamodel must not be empty!
+	at org.springframework.util.Assert.notEmpty(Assert.java:464) ~[spring-core-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.data.jpa.mapping.JpaMetamodelMappingContext.<init>(JpaMetamodelMappingContext.java:58) ~[spring-data-jpa-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.data.jpa.repository.config.JpaMetamodelMappingContextFactoryBean.createInstance(JpaMetamodelMappingContextFactoryBean.java:80) ~[spring-data-jpa-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.data.jpa.repository.config.JpaMetamodelMappingContextFactoryBean.createInstance(JpaMetamodelMappingContextFactoryBean.java:44) ~[spring-data-jpa-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.beans.factory.config.AbstractFactoryBean.afterPropertiesSet(AbstractFactoryBean.java:142) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	... 94 common frames omitted
+
+2020-06-05 23:13:04.865  INFO 3216 --- [main] c.a.a.o.c.OnboardeeControllerTest        : Starting OnboardeeControllerTest on DESKTOP-H6Q22V6 with PID 3216 (started by Pankti in C:\Users\Pankti\eclipse-workspace\AU-Onboarding-Backend)
+2020-06-05 23:13:04.866  INFO 3216 --- [main] c.a.a.o.c.OnboardeeControllerTest        : The following profiles are active: test
+2020-06-05 23:13:06.222  WARN 3216 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaAuditingHandler': Cannot resolve reference to bean 'jpaMappingContext' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: JPA metamodel must not be empty!
+2020-06-05 23:13:06.227  INFO 3216 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-05 23:13:06.230 ERROR 3216 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaAuditingHandler': Cannot resolve reference to bean 'jpaMappingContext' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: JPA metamodel must not be empty!
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:691) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:196) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1358) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:895) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) [spring-boot-test-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) [spring-test-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) [spring-test-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123) [spring-test-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.postProcessFields(MockitoTestExecutionListener.java:95) [spring-boot-test-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.injectFields(MockitoTestExecutionListener.java:79) [spring-boot-test-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.prepareTestInstance(MockitoTestExecutionListener.java:54) [spring-boot-test-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244) [spring-test-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:98) [spring-test-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$5(ClassBasedTestDescriptor.java:341) [junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:346) [junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:341) [junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193) ~[na:1.8.0_151]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175) ~[na:1.8.0_151]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1380) ~[na:1.8.0_151]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481) ~[na:1.8.0_151]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471) ~[na:1.8.0_151]
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312) ~[na:1.8.0_151]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:743) ~[na:1.8.0_151]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:742) ~[na:1.8.0_151]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580) ~[na:1.8.0_151]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:340) [junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:263) [junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:256) [junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at java.util.Optional.orElseGet(Optional.java:267) ~[na:1.8.0_151]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:255) [junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:29) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:108) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:107) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:71) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:107) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:107) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:75) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1255) ~[na:1.8.0_151]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1255) ~[na:1.8.0_151]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:229) ~[.cp/:na]
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:197) ~[.cp/:na]
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:211) ~[.cp/:na]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:191) ~[.cp/:na]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:137) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:89) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209) ~[.cp/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: JPA metamodel must not be empty!
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	... 87 common frames omitted
+Caused by: java.lang.IllegalArgumentException: JPA metamodel must not be empty!
+	at org.springframework.util.Assert.notEmpty(Assert.java:464) ~[spring-core-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.data.jpa.mapping.JpaMetamodelMappingContext.<init>(JpaMetamodelMappingContext.java:58) ~[spring-data-jpa-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.data.jpa.repository.config.JpaMetamodelMappingContextFactoryBean.createInstance(JpaMetamodelMappingContextFactoryBean.java:80) ~[spring-data-jpa-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.data.jpa.repository.config.JpaMetamodelMappingContextFactoryBean.createInstance(JpaMetamodelMappingContextFactoryBean.java:44) ~[spring-data-jpa-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.beans.factory.config.AbstractFactoryBean.afterPropertiesSet(AbstractFactoryBean.java:142) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	... 94 common frames omitted
+
+2020-06-05 23:13:06.233 ERROR 3216 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6a370f4] to prepare test instance [com.accolite.au.onboarding.controllers.OnboardeeControllerTest@3cad68df]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123) ~[spring-test-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.postProcessFields(MockitoTestExecutionListener.java:95) ~[spring-boot-test-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.injectFields(MockitoTestExecutionListener.java:79) ~[spring-boot-test-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.prepareTestInstance(MockitoTestExecutionListener.java:54) ~[spring-boot-test-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244) ~[spring-test-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:98) [spring-test-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$5(ClassBasedTestDescriptor.java:341) [junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:346) [junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:341) [junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193) ~[na:1.8.0_151]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175) ~[na:1.8.0_151]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1380) ~[na:1.8.0_151]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481) ~[na:1.8.0_151]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471) ~[na:1.8.0_151]
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312) ~[na:1.8.0_151]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:743) ~[na:1.8.0_151]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:742) ~[na:1.8.0_151]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580) ~[na:1.8.0_151]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:340) [junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:263) [junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:256) [junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at java.util.Optional.orElseGet(Optional.java:267) ~[na:1.8.0_151]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:255) [junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:29) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:108) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:107) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:71) ~[junit-jupiter-engine-5.6.2.jar:5.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:107) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:107) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:75) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1255) ~[na:1.8.0_151]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1255) ~[na:1.8.0_151]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) ~[junit-platform-engine-1.6.2.jar:1.6.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:229) ~[.cp/:na]
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:197) ~[.cp/:na]
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:211) ~[.cp/:na]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:191) ~[.cp/:na]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:137) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:89) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209) ~[.cp/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaAuditingHandler': Cannot resolve reference to bean 'jpaMappingContext' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: JPA metamodel must not be empty!
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:691) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:196) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1358) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:895) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) ~[spring-boot-test-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	... 66 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: JPA metamodel must not be empty!
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	... 87 common frames omitted
+Caused by: java.lang.IllegalArgumentException: JPA metamodel must not be empty!
+	at org.springframework.util.Assert.notEmpty(Assert.java:464) ~[spring-core-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.data.jpa.mapping.JpaMetamodelMappingContext.<init>(JpaMetamodelMappingContext.java:58) ~[spring-data-jpa-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.data.jpa.repository.config.JpaMetamodelMappingContextFactoryBean.createInstance(JpaMetamodelMappingContextFactoryBean.java:80) ~[spring-data-jpa-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.data.jpa.repository.config.JpaMetamodelMappingContextFactoryBean.createInstance(JpaMetamodelMappingContextFactoryBean.java:44) ~[spring-data-jpa-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.beans.factory.config.AbstractFactoryBean.afterPropertiesSet(AbstractFactoryBean.java:142) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	... 94 common frames omitted
+
+2020-06-05 23:18:09.373  INFO 19664 --- [main] c.a.a.o.c.OnboardeeControllerTest        : Starting OnboardeeControllerTest on DESKTOP-H6Q22V6 with PID 19664 (started by Pankti in C:\Users\Pankti\eclipse-workspace\AU-Onboarding-Backend)
+2020-06-05 23:18:09.375  INFO 19664 --- [main] c.a.a.o.c.OnboardeeControllerTest        : The following profiles are active: test
+2020-06-05 23:18:13.396  INFO 19664 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-05 23:18:15.706  INFO 19664 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: c4e6a5b9-91d4-4d95-a140-03b91d322942
+
+2020-06-05 23:18:16.235  INFO 19664 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@53e76c11, org.springframework.security.web.context.SecurityContextPersistenceFilter@3df1a1ac, org.springframework.security.web.header.HeaderWriterFilter@2e26173, org.springframework.security.web.authentication.logout.LogoutFilter@72503b19, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6a9cd0f8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@350ec690, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@42cc183e, org.springframework.security.web.session.SessionManagementFilter@4fc5563d, org.springframework.security.web.access.ExceptionTranslationFilter@40d60f2]
+2020-06-05 23:18:16.411  INFO 19664 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2020-06-05 23:18:16.411  INFO 19664 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-06-05 23:18:16.460  INFO 19664 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 48 ms
+2020-06-05 23:18:16.616  INFO 19664 --- [main] c.a.a.o.c.OnboardeeControllerTest        : Started OnboardeeControllerTest in 8.559 seconds (JVM running for 10.534)
+2020-06-05 23:18:17.266  INFO 19664 --- [main] c.a.a.o.controllers.OnboardeeController  : Get request received for all onboardees
+2020-06-05 23:18:17.606  INFO 19664 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-05 23:19:56.412  INFO 22148 --- [main] c.a.a.o.c.OnboardeeControllerTest        : Starting OnboardeeControllerTest on DESKTOP-H6Q22V6 with PID 22148 (started by Pankti in C:\Users\Pankti\eclipse-workspace\AU-Onboarding-Backend)
+2020-06-05 23:19:56.416  INFO 22148 --- [main] c.a.a.o.c.OnboardeeControllerTest        : The following profiles are active: test
+2020-06-05 23:20:00.788  INFO 22148 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-05 23:20:02.326  INFO 22148 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: d7debe61-d2f1-472c-acf7-5c3ba39bbc25
+
+2020-06-05 23:20:02.638  INFO 22148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3a4ab7f7, org.springframework.security.web.context.SecurityContextPersistenceFilter@124d02b2, org.springframework.security.web.header.HeaderWriterFilter@3458eca5, org.springframework.security.web.authentication.logout.LogoutFilter@39c96e48, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@72503b19, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3e4e8fdf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6badba10, org.springframework.security.web.session.SessionManagementFilter@5fef2aac, org.springframework.security.web.access.ExceptionTranslationFilter@3664f108]
+2020-06-05 23:20:02.765  INFO 22148 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2020-06-05 23:20:02.766  INFO 22148 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-06-05 23:20:02.817  INFO 22148 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 50 ms
+2020-06-05 23:20:02.906  INFO 22148 --- [main] c.a.a.o.c.OnboardeeControllerTest        : Started OnboardeeControllerTest in 7.589 seconds (JVM running for 9.511)
+2020-06-05 23:20:03.412  INFO 22148 --- [main] c.a.a.o.controllers.OnboardeeController  : Get request received for all onboardees
+2020-06-05 23:20:03.730  INFO 22148 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-05 23:21:07.595  INFO 23772 --- [main] c.a.a.o.c.OnboardeeControllerTest        : Starting OnboardeeControllerTest on DESKTOP-H6Q22V6 with PID 23772 (started by Pankti in C:\Users\Pankti\eclipse-workspace\AU-Onboarding-Backend)
+2020-06-05 23:21:07.597  INFO 23772 --- [main] c.a.a.o.c.OnboardeeControllerTest        : The following profiles are active: test
+2020-06-05 23:21:11.881  INFO 23772 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-05 23:21:13.452  INFO 23772 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 86e9ff60-5771-4d00-88fc-6005ed7e1960
+
+2020-06-05 23:21:13.804  INFO 23772 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@208f0007, org.springframework.security.web.context.SecurityContextPersistenceFilter@47768e74, org.springframework.security.web.header.HeaderWriterFilter@7d979d34, org.springframework.security.web.authentication.logout.LogoutFilter@28369db0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b5a4aed, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@72503b19, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3a90c13c, org.springframework.security.web.session.SessionManagementFilter@1e0fdb2f, org.springframework.security.web.access.ExceptionTranslationFilter@7be2f29a]
+2020-06-05 23:21:13.928  INFO 23772 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2020-06-05 23:21:13.928  INFO 23772 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-06-05 23:21:13.969  INFO 23772 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 39 ms
+2020-06-05 23:21:14.054  INFO 23772 --- [main] c.a.a.o.c.OnboardeeControllerTest        : Started OnboardeeControllerTest in 7.532 seconds (JVM running for 9.913)
+2020-06-05 23:21:14.482  INFO 23772 --- [main] c.a.a.o.controllers.OnboardeeController  : Get request received for onboardee with id: 1
+2020-06-05 23:21:14.763  INFO 23772 --- [main] c.a.a.o.controllers.OnboardeeController  : Get request received for all onboardees
+2020-06-05 23:21:14.819  INFO 23772 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-05 23:28:18.272  INFO 8836 --- [main] c.a.a.o.c.OnboardeeControllerTest        : Starting OnboardeeControllerTest on DESKTOP-H6Q22V6 with PID 8836 (started by Pankti in C:\Users\Pankti\eclipse-workspace\AU-Onboarding-Backend)
+2020-06-05 23:28:18.275  INFO 8836 --- [main] c.a.a.o.c.OnboardeeControllerTest        : The following profiles are active: test
+2020-06-05 23:28:22.793  INFO 8836 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-05 23:28:24.397  INFO 8836 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 9b822ad3-bfe8-4424-9258-6019141751a6
+
+2020-06-05 23:28:24.717  INFO 8836 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7c1447b5, org.springframework.security.web.context.SecurityContextPersistenceFilter@bc6288b, org.springframework.security.web.header.HeaderWriterFilter@19a20bb2, org.springframework.security.web.authentication.logout.LogoutFilter@4a2e7bcb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@34c70b5e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3667faa8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@49e4c2d5, org.springframework.security.web.session.SessionManagementFilter@5d7399f9, org.springframework.security.web.access.ExceptionTranslationFilter@5b9499fe]
+2020-06-05 23:28:24.867  INFO 8836 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2020-06-05 23:28:24.869  INFO 8836 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-06-05 23:28:24.898  INFO 8836 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 29 ms
+2020-06-05 23:28:24.978  INFO 8836 --- [main] c.a.a.o.c.OnboardeeControllerTest        : Started OnboardeeControllerTest in 8.027 seconds (JVM running for 10.62)
+2020-06-05 23:28:25.395  INFO 8836 --- [main] c.a.a.o.controllers.OnboardeeController  : Get request received for onboardee with id: 1
+2020-06-05 23:28:25.738  INFO 8836 --- [main] c.a.a.o.controllers.OnboardeeController  : Get request received for all onboardees
+2020-06-05 23:28:25.938  INFO 8836 --- [main] c.a.a.o.controllers.OnboardeeController  : Post request received to save a new onboardee
+2020-06-05 23:28:25.980  INFO 8836 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-05 23:29:30.329  INFO 19460 --- [main] c.a.a.o.c.OnboardeeControllerTest        : Starting OnboardeeControllerTest on DESKTOP-H6Q22V6 with PID 19460 (started by Pankti in C:\Users\Pankti\eclipse-workspace\AU-Onboarding-Backend)
+2020-06-05 23:29:30.332  INFO 19460 --- [main] c.a.a.o.c.OnboardeeControllerTest        : The following profiles are active: test
+2020-06-05 23:29:34.760  INFO 19460 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-05 23:29:36.191  INFO 19460 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a24a1279-2e4c-4290-9d81-c727f773db76
+
+2020-06-05 23:29:36.554  INFO 19460 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@75babb67, org.springframework.security.web.context.SecurityContextPersistenceFilter@550de6b8, org.springframework.security.web.header.HeaderWriterFilter@590f0c50, org.springframework.security.web.authentication.logout.LogoutFilter@5b9499fe, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3c6c4689, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@949c598, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3eb3232b, org.springframework.security.web.session.SessionManagementFilter@3a4ab7f7, org.springframework.security.web.access.ExceptionTranslationFilter@28369db0]
+2020-06-05 23:29:36.661  INFO 19460 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2020-06-05 23:29:36.662  INFO 19460 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-06-05 23:29:36.694  INFO 19460 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 32 ms
+2020-06-05 23:29:36.783  INFO 19460 --- [main] c.a.a.o.c.OnboardeeControllerTest        : Started OnboardeeControllerTest in 7.636 seconds (JVM running for 10.166)
+2020-06-05 23:29:37.250  INFO 19460 --- [main] c.a.a.o.controllers.OnboardeeController  : Get request received for onboardee with id: 1
+2020-06-05 23:29:37.578  INFO 19460 --- [main] c.a.a.o.controllers.OnboardeeController  : Get request received for all onboardees
+2020-06-05 23:29:37.773  INFO 19460 --- [main] c.a.a.o.controllers.OnboardeeController  : Post request received to save a new onboardee
+2020-06-05 23:29:37.855  INFO 19460 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-05 23:37:44.935  INFO 23392 --- [main] c.a.a.o.c.OnboardeeControllerTest        : Starting OnboardeeControllerTest on DESKTOP-H6Q22V6 with PID 23392 (started by Pankti in C:\Users\Pankti\eclipse-workspace\AU-Onboarding-Backend)
+2020-06-05 23:37:44.938  INFO 23392 --- [main] c.a.a.o.c.OnboardeeControllerTest        : The following profiles are active: test
+2020-06-05 23:37:49.040  INFO 23392 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-05 23:37:51.100  INFO 23392 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 13579783-2ec1-4dc7-b43e-28e196d2a1e7
+
+2020-06-05 23:37:51.382  INFO 23392 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2e86807a, org.springframework.security.web.context.SecurityContextPersistenceFilter@1e0fdb2f, org.springframework.security.web.header.HeaderWriterFilter@203d1d93, org.springframework.security.web.authentication.logout.LogoutFilter@6bee793f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@34b87182, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@76130a29, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4548d254, org.springframework.security.web.session.SessionManagementFilter@34a2d6e0, org.springframework.security.web.access.ExceptionTranslationFilter@58606c91]
+2020-06-05 23:37:51.521  INFO 23392 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2020-06-05 23:37:51.522  INFO 23392 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-06-05 23:37:51.564  INFO 23392 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 42 ms
+2020-06-05 23:37:51.652  INFO 23392 --- [main] c.a.a.o.c.OnboardeeControllerTest        : Started OnboardeeControllerTest in 7.888 seconds (JVM running for 9.987)
+2020-06-05 23:37:52.048  INFO 23392 --- [main] c.a.a.o.controllers.OnboardeeController  : Get request received for onboardee with id: 1
+2020-06-05 23:37:52.471  INFO 23392 --- [main] c.a.a.o.controllers.OnboardeeController  : Get request received for all onboardees
+2020-06-05 23:37:52.759  INFO 23392 --- [main] c.a.a.o.controllers.OnboardeeController  : Post request received to save a new onboardee
+2020-06-05 23:37:52.831  INFO 23392 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-05 23:39:48.754  INFO 10632 --- [main] c.a.a.o.c.OnboardeeControllerTest        : Starting OnboardeeControllerTest on DESKTOP-H6Q22V6 with PID 10632 (started by Pankti in C:\Users\Pankti\eclipse-workspace\AU-Onboarding-Backend)
+2020-06-05 23:39:48.757  INFO 10632 --- [main] c.a.a.o.c.OnboardeeControllerTest        : The following profiles are active: test
+2020-06-05 23:39:52.696  INFO 10632 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-05 23:39:54.211  INFO 10632 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 2b7eade1-0371-4f3a-a08e-3ff061b065ea
+
+2020-06-05 23:39:54.533  INFO 10632 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5befbac1, org.springframework.security.web.context.SecurityContextPersistenceFilter@42cc183e, org.springframework.security.web.header.HeaderWriterFilter@5fef2aac, org.springframework.security.web.authentication.logout.LogoutFilter@550de6b8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6a1d6ef2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@61514735, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5e9f73b, org.springframework.security.web.session.SessionManagementFilter@5d342959, org.springframework.security.web.access.ExceptionTranslationFilter@47768e74]
+2020-06-05 23:39:54.655  INFO 10632 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2020-06-05 23:39:54.655  INFO 10632 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-06-05 23:39:54.690  INFO 10632 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 34 ms
+2020-06-05 23:39:54.769  INFO 10632 --- [main] c.a.a.o.c.OnboardeeControllerTest        : Started OnboardeeControllerTest in 7.101 seconds (JVM running for 9.106)
+2020-06-05 23:39:55.113  INFO 10632 --- [main] c.a.a.o.controllers.OnboardeeController  : Get request received for onboardee with id: 1
+2020-06-05 23:39:55.486  INFO 10632 --- [main] c.a.a.o.controllers.OnboardeeController  : Delete request received to delete onboardee with id: 1
+2020-06-05 23:39:55.519  INFO 10632 --- [main] c.a.a.o.controllers.OnboardeeController  : Get request received for all onboardees
+2020-06-05 23:39:55.752  INFO 10632 --- [main] c.a.a.o.controllers.OnboardeeController  : Put request received to update onoardee with id: 1
+2020-06-05 23:39:55.782  INFO 10632 --- [main] c.a.a.o.controllers.OnboardeeController  : Post request received to save a new onboardee
+2020-06-05 23:39:55.868  INFO 10632 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-05 23:40:56.205  INFO 18392 --- [main] c.a.a.o.c.OnboardeeControllerTest        : Starting OnboardeeControllerTest on DESKTOP-H6Q22V6 with PID 18392 (started by Pankti in C:\Users\Pankti\eclipse-workspace\AU-Onboarding-Backend)
+2020-06-05 23:40:56.206  INFO 18392 --- [main] c.a.a.o.c.OnboardeeControllerTest        : The following profiles are active: test
+2020-06-05 23:41:00.337  INFO 18392 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-05 23:41:02.052  INFO 18392 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 4beda5df-083b-41a0-ad2f-ff0313986aa0
+
+2020-06-05 23:41:02.636  INFO 18392 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@36920bd6, org.springframework.security.web.context.SecurityContextPersistenceFilter@350ec690, org.springframework.security.web.header.HeaderWriterFilter@286090c, org.springframework.security.web.authentication.logout.LogoutFilter@2721044, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3664f108, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@34b87182, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@61514735, org.springframework.security.web.session.SessionManagementFilter@2c2a027c, org.springframework.security.web.access.ExceptionTranslationFilter@3b8ec001]
+2020-06-05 23:41:02.801  INFO 18392 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2020-06-05 23:41:02.802  INFO 18392 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-06-05 23:41:02.845  INFO 18392 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 42 ms
+2020-06-05 23:41:02.935  INFO 18392 --- [main] c.a.a.o.c.OnboardeeControllerTest        : Started OnboardeeControllerTest in 7.835 seconds (JVM running for 9.816)
+2020-06-05 23:41:03.310  INFO 18392 --- [main] c.a.a.o.controllers.OnboardeeController  : Get request received for onboardee with id: 1
+2020-06-05 23:41:03.688  INFO 18392 --- [main] c.a.a.o.controllers.OnboardeeController  : Delete request received to delete onboardee with id: 1
+2020-06-05 23:41:03.707  INFO 18392 --- [main] c.a.a.o.controllers.OnboardeeController  : Get request received for all onboardees
+2020-06-05 23:41:03.905  INFO 18392 --- [main] c.a.a.o.controllers.OnboardeeController  : Put request received to update onoardee with id: 1
+2020-06-05 23:41:03.928  INFO 18392 --- [main] c.a.a.o.controllers.OnboardeeController  : Post request received to save a new onboardee
+2020-06-05 23:41:03.957  INFO 18392 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-05 23:45:47.583  INFO 10572 --- [main] c.a.a.o.controllers.UserControllerTest   : Starting UserControllerTest on DESKTOP-H6Q22V6 with PID 10572 (started by Pankti in C:\Users\Pankti\eclipse-workspace\AU-Onboarding-Backend)
+2020-06-05 23:45:47.586  INFO 10572 --- [main] c.a.a.o.controllers.UserControllerTest   : The following profiles are active: test
+2020-06-05 23:45:51.301  INFO 10572 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-05 23:45:53.371  INFO 10572 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 1d9bad2e-f7a2-466d-b521-37e8d272f439
+
+2020-06-05 23:45:53.672  INFO 10572 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2b7e8044, org.springframework.security.web.context.SecurityContextPersistenceFilter@72503b19, org.springframework.security.web.header.HeaderWriterFilter@3c380bd8, org.springframework.security.web.authentication.logout.LogoutFilter@40d23c82, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@66deec87, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2721044, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@550de6b8, org.springframework.security.web.session.SessionManagementFilter@76130a29, org.springframework.security.web.access.ExceptionTranslationFilter@34a2d6e0]
+2020-06-05 23:45:53.802  INFO 10572 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2020-06-05 23:45:53.803  INFO 10572 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-06-05 23:45:53.832  INFO 10572 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 29 ms
+2020-06-05 23:45:53.908  INFO 10572 --- [main] c.a.a.o.controllers.UserControllerTest   : Started UserControllerTest in 7.513 seconds (JVM running for 9.744)
+2020-06-05 23:45:54.317  INFO 10572 --- [main] c.a.a.o.controllers.UserController       : Get request received for user with id: 1
+2020-06-05 23:45:54.654  INFO 10572 --- [main] c.a.a.o.controllers.UserController       : Get request received for all users
+2020-06-05 23:45:54.708  INFO 10572 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-05 23:49:54.393  INFO 6000 --- [main] c.a.a.o.c.DemandControllerTest           : Starting DemandControllerTest on DESKTOP-H6Q22V6 with PID 6000 (started by Pankti in C:\Users\Pankti\eclipse-workspace\AU-Onboarding-Backend)
+2020-06-05 23:49:54.396  INFO 6000 --- [main] c.a.a.o.c.DemandControllerTest           : The following profiles are active: test
+2020-06-05 23:49:58.514  INFO 6000 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-05 23:50:00.016  INFO 6000 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: d0e83a2d-533a-4ea5-a18f-bdd7be65c0d7
+
+2020-06-05 23:50:00.369  INFO 6000 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@590f0c50, org.springframework.security.web.context.SecurityContextPersistenceFilter@34b87182, org.springframework.security.web.header.HeaderWriterFilter@118dcbbd, org.springframework.security.web.authentication.logout.LogoutFilter@43b5021c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2740e316, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3451f01d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@208f0007, org.springframework.security.web.session.SessionManagementFilter@3458eca5, org.springframework.security.web.access.ExceptionTranslationFilter@4baed682]
+2020-06-05 23:50:00.507  INFO 6000 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2020-06-05 23:50:00.508  INFO 6000 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-06-05 23:50:00.548  INFO 6000 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 40 ms
+2020-06-05 23:50:00.643  INFO 6000 --- [main] c.a.a.o.c.DemandControllerTest           : Started DemandControllerTest in 7.342 seconds (JVM running for 9.578)
+2020-06-05 23:50:01.054  INFO 6000 --- [main] c.a.a.o.controllers.DemandController     : Get request received for demand with id: 1
+2020-06-05 23:50:01.637  INFO 6000 --- [main] c.a.a.o.controllers.DemandController     : Post request received to save a new demand
+2020-06-05 23:50:01.657  INFO 6000 --- [main] c.a.a.o.controllers.DemandController     : Get request received for all demands
+2020-06-05 23:50:01.711  INFO 6000 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-05 23:54:05.058  INFO 20580 --- [main] c.a.a.o.controllers.LogControllerTest    : Starting LogControllerTest on DESKTOP-H6Q22V6 with PID 20580 (started by Pankti in C:\Users\Pankti\eclipse-workspace\AU-Onboarding-Backend)
+2020-06-05 23:54:05.061  INFO 20580 --- [main] c.a.a.o.controllers.LogControllerTest    : The following profiles are active: test
+2020-06-05 23:54:08.857  INFO 20580 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-05 23:54:11.465  INFO 20580 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 8b85505a-29f7-4041-b127-a8aa5f21a8ba
+
+2020-06-05 23:54:11.760  INFO 20580 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2721044, org.springframework.security.web.context.SecurityContextPersistenceFilter@7be2f29a, org.springframework.security.web.header.HeaderWriterFilter@6cd98a05, org.springframework.security.web.authentication.logout.LogoutFilter@2ecf5915, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2c2a027c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@34a2d6e0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@205df5dc, org.springframework.security.web.session.SessionManagementFilter@58606c91, org.springframework.security.web.access.ExceptionTranslationFilter@2e26173]
+2020-06-05 23:54:11.890  INFO 20580 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2020-06-05 23:54:11.890  INFO 20580 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-06-05 23:54:11.921  INFO 20580 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 30 ms
+2020-06-05 23:54:11.998  INFO 20580 --- [main] c.a.a.o.controllers.LogControllerTest    : Started LogControllerTest in 8.292 seconds (JVM running for 10.41)
+2020-06-05 23:54:12.756  INFO 20580 --- [main] c.a.a.o.controllers.LogController        : Post request received to save a new log
+2020-06-05 23:54:12.956  INFO 20580 --- [main] c.a.a.o.controllers.LogController        : Get request received for log with id: 1
+2020-06-05 23:54:12.992  INFO 20580 --- [main] c.a.a.o.controllers.LogController        : Get request received for all logs
+2020-06-05 23:54:13.099  INFO 20580 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
