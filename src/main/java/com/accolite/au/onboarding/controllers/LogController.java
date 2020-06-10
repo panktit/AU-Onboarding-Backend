@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.accolite.au.onboarding.exceptions.EntityInstanceNotFoundException;
-import com.accolite.au.onboarding.models.ULog;
+import com.accolite.au.onboarding.models.Log;
 import com.accolite.au.onboarding.services.LogService;
 
 import lombok.extern.slf4j.Slf4j;
@@ -25,13 +25,13 @@ public class LogController {
 	private LogService logService;
 	
 	@GetMapping("/logs")
-	public List<ULog> getAllLogs() {
+	public List<Log> getAllLogs() {
 		log.info("Get request received for all logs");
 		return logService.getAllLogs();
 	}
 	
 	@GetMapping("/log/{id}")
-	public ULog getLog(@PathVariable Long id) {
+	public Log getLog(@PathVariable Long id) {
 		log.info("Get request received for log with id: "+id);
 		try {
 			return logService.getLog(id);
@@ -43,7 +43,7 @@ public class LogController {
 
 	
 	@PostMapping("/logs")
-	public ULog saveLog(@RequestBody ULog newLog) {
+	public Log saveLog(@RequestBody Log newLog) {
 		log.info("Post request received to save a new log");
 		return logService.saveLog(newLog);
 	}

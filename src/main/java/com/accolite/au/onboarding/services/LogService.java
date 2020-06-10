@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.accolite.au.onboarding.exceptions.EntityInstanceNotFoundException;
-import com.accolite.au.onboarding.models.ULog;
+import com.accolite.au.onboarding.models.Log;
 import com.accolite.au.onboarding.repositories.LogRepository;
 
 import lombok.extern.slf4j.Slf4j;
@@ -24,22 +24,22 @@ public class LogService {
 	
 	SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");  
 	
-	public List<ULog> getAllLogs() {
+	public List<Log> getAllLogs() {
 		log.info("Log service call to get all user logs");
-        Iterable<ULog> logItr = logRepository.findAll();
-        List<ULog> logs = StreamSupport
+        Iterable<Log> logItr = logRepository.findAll();
+        List<Log> logs = StreamSupport
         					.stream(logItr.spliterator(), false)
         					.collect(Collectors.toList());
         return logs;
     }
 	
-	public ULog saveLog(ULog newLog) {
+	public Log saveLog(Log newLog) {
 		log.info("Log service call to save new user log");
 		newLog.setCreated_at(formatter.format(new Date()));
 		return logRepository.save(newLog);
 	}
 	
-	public ULog getLog(Long id) throws EntityInstanceNotFoundException {
+	public Log getLog(Long id) throws EntityInstanceNotFoundException {
 		log.info("Log service call to get log with id: "+id);
 		if(logRepository.existsById(id))
 			return logRepository.findById(id).get();

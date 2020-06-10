@@ -6,7 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class ULog {
+public class Log {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -15,16 +15,16 @@ public class ULog {
 	private String description;
 	private String created_at;
 	
-	public ULog() {}
+	public Log() {}
 	
 	
-	public ULog(String type, String description) {
+	public Log(String type, String description) {
 		this.type = type;
 		this.description = description;
 	}
 
 
-	public ULog(String type, String description, String created_at) {
+	public Log(String type, String description, String created_at) {
 		this.type = type;
 		this.description = description;
 		this.created_at = created_at;
@@ -68,7 +68,7 @@ public class ULog {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		ULog other = (ULog) obj;
+		Log other = (Log) obj;
 		if (id == null) {
 			if (other.id != null)
 				return false;

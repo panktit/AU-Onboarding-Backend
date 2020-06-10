@@ -19,7 +19,7 @@ import org.springframework.http.MediaType;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.web.servlet.MockMvc;
 
-import com.accolite.au.onboarding.models.ULog;
+import com.accolite.au.onboarding.models.Log;
 import com.accolite.au.onboarding.services.LogService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -36,14 +36,14 @@ public class LogControllerTest {
 	@Autowired
 	private ObjectMapper objectMapper;
 
-	private List<ULog> list;
+	private List<Log> list;
 
 	@BeforeEach
 	void setUp() {
 		this.list = new ArrayList<>();
-		this.list.add(new ULog("log1", "description1"));
-		this.list.add(new ULog("log2", "description2"));
-		this.list.add(new ULog("log3", "description3"));
+		this.list.add(new Log("log1", "description1"));
+		this.list.add(new Log("log2", "description2"));
+		this.list.add(new Log("log3", "description3"));
 
 	}
 
@@ -59,7 +59,7 @@ public class LogControllerTest {
 	@Test
 	void shouldFetchOneULogById() throws Exception {
 		final Long id = 1L;
-		final ULog log = new ULog("test", "pending");
+		final Log log = new Log("test", "pending");
 
 		when(logService.getLog(id)).thenReturn(log);
 
@@ -71,8 +71,8 @@ public class LogControllerTest {
 	@Test
 	void shouldCreateNewULog() throws Exception {
 
-		ULog log = new ULog("post test", "pnd");
-		ULog returned = new ULog("post test", "pnd");
+		Log log = new Log("post test", "pnd");
+		Log returned = new Log("post test", "pnd");
 		
 		when(logService.saveLog(log)).thenReturn(returned);
 

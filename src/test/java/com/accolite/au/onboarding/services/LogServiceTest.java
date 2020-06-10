@@ -16,7 +16,7 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import com.accolite.au.onboarding.exceptions.EntityInstanceNotFoundException;
-import com.accolite.au.onboarding.models.ULog;
+import com.accolite.au.onboarding.models.Log;
 import com.accolite.au.onboarding.repositories.LogRepository;
 
 @ExtendWith(MockitoExtension.class)
@@ -28,14 +28,14 @@ class LogServiceTest {
 	@InjectMocks
 	private LogService logService;
 	
-	ULog log1;
-	ULog log2;
-	List<ULog> logList;
+	Log log1;
+	Log log2;
+	List<Log> logList;
 
 	@BeforeEach
 	public void setup() {
-		log1 = new ULog("INFO", "desc1", "05/06/2020");
-		log2 = new ULog("WARN", "desc2", "05/06/2020");
+		log1 = new Log("INFO", "desc1", "05/06/2020");
+		log2 = new Log("WARN", "desc2", "05/06/2020");
 		logList = new ArrayList<>();
 		logList.add(log1);
 		logList.add(log2);
@@ -44,10 +44,10 @@ class LogServiceTest {
 	@Test
 	void shouldSaveLogSuccessFully() {
 //		defining repository behavior
-		when(logRepository.save(any(ULog.class))).thenReturn(log1);
+		when(logRepository.save(any(Log.class))).thenReturn(log1);
 
 //		calling the service function
-		ULog returnedOb = logService.saveLog(log1);
+		Log returnedOb = logService.saveLog(log1);
 
 //		assertions
 		assertNotNull(returnedOb);
@@ -60,7 +60,7 @@ class LogServiceTest {
 		when(logRepository.findAll()).thenReturn(logList);
 
 //		calling the service function
-		List<ULog> returnedList = logService.getAllLogs();
+		List<Log> returnedList = logService.getAllLogs();
 
 //		assertions
 		assertThat(returnedList).isEqualTo(logList);
@@ -75,7 +75,7 @@ class LogServiceTest {
 		when(logRepository.findById(log2.getId())).thenReturn(java.util.Optional.ofNullable(log2));
 
 //		calling the service function
-		ULog returned = logService.getLog(2L);
+		Log returned = logService.getLog(2L);
 		
 //		assertions
 		assertNotNull(returned);

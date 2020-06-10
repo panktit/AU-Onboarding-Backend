@@ -15,7 +15,7 @@ import lombok.extern.slf4j.Slf4j;
 
 import com.accolite.au.onboarding.exceptions.EntityInstanceNotFoundException;
 import com.accolite.au.onboarding.exceptions.InvalidCredentialsException;
-import com.accolite.au.onboarding.models.ULog;
+import com.accolite.au.onboarding.models.Log;
 import com.accolite.au.onboarding.models.User;
 
 @Slf4j
@@ -75,7 +75,7 @@ public class UserService {
 		log.info("User service call to get logs of a particular user");
 		User user = userRepository.findFirstByName(name);
 		if (user != null) {
-			user.getLogs().add(new ULog(type, description, formatter.format(new Date())));
+			user.getLogs().add(new Log(type, description, formatter.format(new Date())));
 			return userRepository.save(user);
 		} else {
 			log.warn("The requested entity does not exist");
